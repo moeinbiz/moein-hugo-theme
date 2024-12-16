@@ -1,0 +1,12 @@
+name = 'Mostafa Hugo Theme'
+license = 'MIT'
+licenselink = 'https://github.com/mirmousaviii/mostafa-hugo-theme/blob/main/LICENSE'
+description = 'A simple and modern Hugo theme'
+homepage = 'https://github.com/mirmousaviii/mostafa-hugo-theme'
+demosite = 'https://mirmousavi.com/'
+tags = ['blog', 'minimal', 'responsive', 'multilingual', 'personal', 'dark', 'modern']
+features = ['lightweight', 'fast', 'media']
+[author]
+  name = 'Mostafa Mirmousavi'
+  homepage = 'https://mirmousavi.com/'
+min_version = "0.142.0"
