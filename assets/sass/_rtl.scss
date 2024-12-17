@@ -1,0 +1,16 @@
+.rtl {
+//direction: rtl;
+  header {
+    .container {
+      flex-direction: row-reverse;
+    }
+
+    .title {
+      margin-left: auto;
+    }
+  }
+
+  .content {
+    direction: rtl;
+  }
+}
