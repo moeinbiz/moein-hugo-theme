@@ -1,0 +1,76 @@
+{{ with .Params.tags }}
+<div class="footer">
+{{ else }}
+<div class="footer no-tags">
+{{ end }}
+
+
+
+    {{- $iconClass := "" -}}
+    {{- if and (isset .Params "icon") (ne .Params.icon "") -}}
+    {{- $iconClass = .Params.icon -}}
+    {{- else if eq .Type "quote" -}}
+    {{- $iconClass = "fa-quote-right" -}}
+    {{- else if eq .Type "link" -}}
+    {{- $iconClass = "fa-link" -}}
+    {{- else if eq .Type "video" -}}
+    {{- $iconClass = "fa-video" -}}
+    {{- else if or (eq .Type "gallery") (eq .Type "picture") -}}
+    {{- $iconClass = "fa-camera" -}}
+    {{- else if eq .Type "audio" -}}
+    {{- $iconClass = "fa-music" -}}
+    {{- else if eq .Type "code" -}}
+    {{- $iconClass = "fa-code" -}}
+    {{- else -}}
+    {{-  $iconClass = "fa-file-lines" -}}
+    {{- end -}}
+
+
+    {{ with .Params.categories }}
+    <div class="categories">
+        <i class="fa {{ $iconClass }} "></i>
+        <div class="links">
+            {{ range . }}
+            {{ $urlValue := replace . " " "-" | lower}}
+            {{ with $.Site.GetPage (printf "/categories/%s" $urlValue) }}
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+
+<!--    {{ with .Params.tags }}-->
+<!--        <div class="tags">-->
+<!--            <i class="fa fa-tags"></i>-->
+<!--            <div class="links">-->
+<!--                {{ range . }}-->
+<!--                    {{ $urlValue := replace . " " "-" | lower}}-->
+<!--                    {{ with $.Site.GetPage (printf "/tags/%s" $urlValue) }}-->
+<!--                    <a href="{{ .Permalink }}">{{ .Title }}</a>-->
+<!--                    {{ end }}-->
+<!--                {{ end }}-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    {{ end }}-->
+
+
+
+    <div class="date">
+        <i class="fa fa-calendar-days"></i>
+        {{ if ( .Params.showDate | default true ) }}
+            {{ if ( .Site.Params.enableMomentJs | default true ) }}
+            <span class="text moment">
+                {{ .PublishDate.Format "2006-01-02" }}</span>
+            {{ else }}
+            <span class="text">{{ .PublishDate.Format (.Site.Params.DateFormat | default "2006-01-02") }}</span>
+            {{ end }}
+        {{ else }}
+        <span class="text">{{ i18n "currently" }}</span>
+        {{ end }}
+    </div>
+
+
+
+</div>

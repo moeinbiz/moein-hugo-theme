@@ -1,2 +1,48 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<header>
+    <a id="back-to-top-button">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <div class="container">
+        <h1 class="title">
+            <a href="{{ .Site.BaseURL }}">
+                {{ .Site.Title }}
+            </a>
+        </h1>
+
+        <nav>
+            <ul>
+                {{ range .Site.Params.socialMediaLinks }}
+                <li><a href="{{ .link }}" target="_blank" rel="{{ .rel }}"><em class="{{ .icon }}"></em></a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+{{ if and (gt .Site.Languages 1) (.Site.Params.showHeaderLanguageChooser | default true) }}
+{{- $language := .Language -}}
+{{- $pages := .Page.AllTranslations -}}
+<div class="languages">
+    <ul>
+        {{ range $.Site.Home.AllTranslations }}
+        {{ $url := .RelPermalink }}
+        {{ range where $pages "Lang" .Language.Lang }}
+        {{ $url = .RelPermalink }}
+        {{ end }}
+
+
+        {{ if eq $language .Language }}
+        <li class="active"><a href="{{ $url }}">
+            {{ .Language.LanguageName }}
+        </a></li>
+        {{ else }}
+        <li><a href="{{ $url }}">
+            {{ .Language.LanguageName }}
+        </a></li>
+        {{ end }}
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

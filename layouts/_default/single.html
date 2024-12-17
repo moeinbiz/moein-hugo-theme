@@ -1,10 +1,9 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    <div class="article-wrapper u-cf single">
+        {{  if or (fileExists (print "layouts/partials/content-type/" .Type ".html") ) (fileExists (print "themes/bilberry-hugo-theme/layouts/partials/content-type/" .Type ".html")) }}
+            {{ partial (print "content-type/" .Type ".html") (dict "ctx" . "template_type" "single") }}
+        {{ else }}
+            {{ partial "content-type/article.html" (dict "ctx" . "template_type" "single") }}
+        {{ end }}
+    </div>
 {{ end }}
