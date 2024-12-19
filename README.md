@@ -1,5 +1,9 @@
 # Mostafa Hugo Theme
 
+A simple and modern Hugo theme.
+
+The theme supports multiple languages, various content types, and integrates seamlessly with social media platforms.
+
 ## Features
 
 - Lightweight and fast
