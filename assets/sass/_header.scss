@@ -138,7 +138,12 @@ header {
         }
 
         .active {
-            font-weight: bold;
+            color: #ffffff;
+
+            :hover {
+                color: #ffffff;
+                cursor: default;
+            }
         }
 
     }
