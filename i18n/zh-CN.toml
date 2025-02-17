@@ -7,6 +7,9 @@ other = "作者"
 [tags]
 other = "标签"
 
+[posts]
+other = "帖子"
+
 [socialMedia]
 other = "社交媒体"
 

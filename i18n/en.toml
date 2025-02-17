@@ -7,6 +7,9 @@ other = "Authors"
 [tags]
 other = "Tags"
 
+[posts]
+other = "Posts"
+
 [socialMedia]
 other = "Social media"
 
@@ -46,6 +49,3 @@ other = "Archive"
 
 [otherLinks]
 other = "Other Links"
-
-[currently]
-other = "Currently"

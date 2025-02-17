@@ -35,7 +35,7 @@
         {{ end }}
 
         <div class="right">
-            {{ if .Site.Params.showSocialMedia | default true }}
+            {{ if .Site.Params.otherLinks }}
             <strong>{{ i18n "otherLinks" }}</strong>
 
             <ul>
@@ -64,16 +64,16 @@
 <div class="credits">
     <div class="container">
         <div class="copyright">
-            <a href="{{ .Site.Params.copyrightUrl | default "https://mirmousavi.com" }}">
+            <a href="{{ .Site.Params.copyrightUrl | default .Site.BaseURL }}">
                 &copy;
                 {{ if .Site.Params.copyrightUseCurrentYear }}
                 {{ now.Year }}
-                {{ else if gt now.Year (.Site.Params.copyrightYearOverride | default 2018) }}
-                {{ .Site.Params.copyrightYearOverride | default 2018 }} - {{ now.Year }}
+                {{ else if gt now.Year (.Site.Params.copyrightYearOverride | default 2024) }}
+                {{ .Site.Params.copyrightYearOverride | default 2024 }} - {{ now.Year }}
                 {{ else }}
-                {{ .Site.Params.copyrightYearOverride | default 2018 }}
+                {{ .Site.Params.copyrightYearOverride | default 2024 }}
                 {{ end }}
-                {{ .Site.Params.copyrightBy | default "by Mostafa Mirmousavi" }}
+                {{ .Site.Params.copyrightBy | default (printf "by %s" .Site.Title) }}
             </a>
             {{ with  .OutputFormats.Get "rss" -}}
             -
@@ -81,8 +81,8 @@
             {{- end }}
         </div>
         <div class="author">
-            <a href="{{ .Site.Params.creditsUrl | default "https://mirmousavi.com" }}"
-                target="_blank">{{ .Site.Params.creditsText | default "Powered by Mostafa-Hugo-Theme" }}</a>
+            <a href="https://github.com/mirmousaviii/mostafa-hugo-theme"
+                target="_blank">Powered by Mostafa-Hugo-Theme</a>
         </div>
     </div>
 </div>

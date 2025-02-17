@@ -7,6 +7,9 @@ other = "Autoren"
 [tags]
 other = "Tags"
 
+[posts]
+other = "Beiträge"
+
 [socialMedia]
 other = "Social media"
 
@@ -40,6 +43,3 @@ other = "Archiv"
 
 [otherLinks]
 other = "Andere Links"
-
-[currently]
-other = "Momentan"

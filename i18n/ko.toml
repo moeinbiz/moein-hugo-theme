@@ -7,6 +7,9 @@ other = "글쓴이"
 [tags]
 other = "태그"
 
+[posts]
+other = "글"
+
 [socialMedia]
 other = "소셜 미디어"
 

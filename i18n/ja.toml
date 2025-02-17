@@ -7,6 +7,9 @@ other = "著者"
 [tags]
 other = "タグ"
 
+[posts]
+other = "投稿"
+
 [socialMedia]
 other = "ソーシャルメディア"
 

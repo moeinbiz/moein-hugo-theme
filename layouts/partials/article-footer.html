@@ -25,20 +25,22 @@
     {{-  $iconClass = "fa-file-lines" -}}
     {{- end -}}
 
-
-    {{ with .Params.categories }}
+    
     <div class="categories">
         <i class="fa {{ $iconClass }} "></i>
         <div class="links">
-            {{ range . }}
-            {{ $urlValue := replace . " " "-" | lower}}
-            {{ with $.Site.GetPage (printf "/categories/%s" $urlValue) }}
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ end }}
+            {{ with .Params.categories }}
+                {{ range . }}
+                {{ $urlValue := replace . " " "-" | lower}}
+                {{ with $.Site.GetPage (printf "/categories/%s" $urlValue) }}
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                {{ end }}
+                {{ end }}
+            {{ else }}
+                <a href="{{ $.Site.BaseURL }}posts/">{{ i18n "posts" }}</a>
             {{ end }}
         </div>
     </div>
-    {{ end }}
 
 
 <!--    {{ with .Params.tags }}-->
@@ -58,16 +60,14 @@
 
 
     <div class="date">
-        <i class="fa fa-calendar-days"></i>
         {{ if ( .Params.showDate | default true ) }}
+            <i class="fa fa-calendar-days"></i>
             {{ if ( .Site.Params.enableMomentJs | default true ) }}
             <span class="text moment">
-                {{ .PublishDate.Format "2006-01-02" }}</span>
+                {{ .PublishDate.Format (.Site.Params.DateFormat | default "2006-01-02") }}</span>
             {{ else }}
             <span class="text">{{ .PublishDate.Format (.Site.Params.DateFormat | default "2006-01-02") }}</span>
             {{ end }}
-        {{ else }}
-        <span class="text">{{ i18n "currently" }}</span>
         {{ end }}
     </div>
 

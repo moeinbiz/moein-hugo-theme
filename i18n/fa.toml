@@ -7,6 +7,9 @@ other = "نویسنده‌ها"
 [tags]
 other = "برچسب‌ها"
 
+[posts]
+other = "پست‌ها"
+
 [socialMedia]
 other = "شبکه‌های اجتماعی"
 
@@ -46,6 +49,3 @@ other = "آرشیو"
 
 [otherLinks]
 other = "لینک‌های دیگر"
-
-[currently]
-other = "اکنون"

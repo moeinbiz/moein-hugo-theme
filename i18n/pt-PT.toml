@@ -7,6 +7,9 @@ other = "Autores"
 [tags]
 other = "Etiquetas"
 
+[posts]
+other = "Artigos"
+
 [socialMedia]
 other = "Redes sociais"
 
