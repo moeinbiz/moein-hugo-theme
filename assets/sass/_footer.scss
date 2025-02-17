@@ -1,6 +1,4 @@
 footer {
-    //border-top: 3px solid $footer-border-color;
-    //border-bottom: 3px solid $footer-border-color;
 
     border-bottom: 1px double #000000;
     box-shadow: 1px 1px 0 #2c2c2c;
@@ -12,7 +10,6 @@ footer {
         display: flex;
         justify-content: space-between;
         font-size: 0.9em;
-        font-family: $headline-font;
 
         div {
             &:not(:first-child) {
@@ -35,7 +32,6 @@ footer {
             margin-top: 1.25em;
 
             li {
-                //border-bottom: 1px solid #eee;
                 padding-right: 10px;
             }
 
@@ -44,14 +40,12 @@ footer {
                 left: 0;
                 display: inline-block;
                 transition: left 0.3s ease-in-out;
-                //color: $highlight-color;
                 color: #777;
                 font-family: $content-font;
                 text-decoration: none;
 
                 &:hover {
                     left: 10px;
-                    //color: $base-color;
                 }
             }
         }

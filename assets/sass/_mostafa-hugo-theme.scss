@@ -6,7 +6,6 @@
 
 .mostafa-hugo-theme {
     background-color: $page-background-color;
-    //background-color: $base-color;
 
     font-family: $content-font;
     color: $text-color;
@@ -20,7 +19,7 @@
     h6,
     .title,
     .subtitle {
-        font-family: $headline-font;
+        // font-family: $content-font;
     }
 
     a {
@@ -29,7 +28,6 @@
         transition: all 0.2s ease-in-out;
 
         &:hover {
-            //color: $highlight-color;
             color: $header-text-color;
         }
 
@@ -52,7 +50,7 @@
 
             code {
                 background-color: inherit;
-                font-family: $code-block-font;
+                font-family: 'Courier New', Courier, monospace;
                 border: 0;
                 margin: 0;
                 padding: 1.0em;
@@ -118,8 +116,6 @@
     }
 
     .container {
-        width: $site-width;
-        //width: 100%;
         max-width: 100%;
     }
 
@@ -147,10 +143,7 @@
     #back-to-top-button {
         display: inline-block;
         color: $page-background-color;
-        //background-color: $base-color;
-        //background-color: $article-background-color;
         background-color: #343434;
-        //border: 1px solid $page-background-color;
         font-size: 2.5em;
         line-height: 45px;
         width: 45px;

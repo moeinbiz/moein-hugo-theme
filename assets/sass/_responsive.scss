@@ -1,4 +1,4 @@
-@media (max-width: $site-width) {
+@media (max-width: 800px) {
     header {
 
         flex-direction: column;
@@ -6,20 +6,9 @@
 
         padding-bottom: 2rem;
 
-        //width: 100%;
-        //
         .container {
             flex-direction: column;
 
-            //padding: 0 10px;
-            //.titles {
-            //    font-size: 1.5rem;
-            //    line-height: 140%;
-            //    .title {
-            //        font-size: 2.6rem;
-            //        line-height: 180%;
-            //    }
-            //}
         }
 
         .title {
@@ -30,18 +19,11 @@
         }
 
         nav ul li {
-            //box-shadow: 1px 0 1px #2c2c2c;
-
-            //a {
-            //    font-size: 2.5rem;
-            //}
         }
 
     }
 
     .languages {
-        // margin-left: 15px;
-
         margin-left: 0;
         text-align: center;
 
