@@ -22,6 +22,7 @@ The theme supports multiple languages, various content types, and integrates sea
 - [Configuration](#configuration)
 - [Sample Configurations](#sample-configurations)
 - [Running Your Hugo Site](#running-your-hugo-site)
+- [Using Sample Content](#using-sample-content)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -120,7 +121,7 @@ Here are the configuration options for the theme.
 
 ### Basic Settings
 
-- `baseURL`: The website URL (https://mirmousavi.com/)
+- `baseURL`: The website URL (<https://mirmousavi.com/>)
 - `title`: Main site title
 - `DefaultContentLanguage`: Default content language (en)
 - `googleAnalytics`: Google Analytics tracking ID
@@ -407,6 +408,26 @@ After installing the theme, run:
 ```bash
 hugo server
 ```
+
+## Using Sample Content
+
+To use the sample content provided with the theme, follow these steps:
+
+1. Copy the sample content from the theme's `exampleSite` directory to your Hugo site's content directory:
+
+```bash
+cp -r themes/mostafa-hugo-theme/exampleSite/content/* content/
+```
+
+2. Start the Hugo server to see the sample content in action:
+
+```bash
+hugo server
+```
+
+3. Open `http://localhost:1313` in your browser to preview the sample content.
+
+Feel free to modify the sample content to suit your needs.
 
 ## Contributing
 
