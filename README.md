@@ -26,6 +26,8 @@ The theme supports multiple languages, various content types, and integrates sea
 - [Sample Configurations](#sample-configurations)
 - [Running Your Hugo Site](#running-your-hugo-site)
 - [Using Sample Content](#using-sample-content)
+  - [Copy sample content to your site](#copy-sample-content-to-your-site)
+  - [Use exampleSite](#use-examplesite)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -65,6 +67,8 @@ Edit your `config.toml` file and add:
     [[module.imports]]
         path = "github.com/mirmousaviii/mostafa-hugo-theme"
 ```
+
+\*Note: You can also use `hugo.toml` or other config instead of `config.toml` for configuration.*
 
 #### 1.3 Fetch the theme
 
@@ -416,7 +420,11 @@ After installing the theme, run:
 hugo server
 ```
 
+Open [http://localhost:1313](http://localhost:1313) in your browser to preview the sample content.
+
 ## Using Sample Content
+
+### Copy sample content to your site
 
 To use the sample content provided with the theme, follow these steps:
 
@@ -432,9 +440,15 @@ cp -r themes/mostafa-hugo-theme/exampleSite/content/* content/
 hugo server
 ```
 
-3. Open `http://localhost:1313` in your browser to preview the sample content.
-
 Feel free to modify the sample content to suit your needs.
+
+### Use exampleSite
+
+Alternatively, you can start the Hugo server directly from the `exampleSite` directory JUST FOR TEST:
+
+```bash
+hugo server -s exampleSite
+```
 
 ## Contributing
 
