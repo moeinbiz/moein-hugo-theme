@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://mirmousaviii.github.io/mostafa-hugo-theme/" # You can use "/" in local
 languageCode = "en-us"
 title = "Mostafa Hugo Theme Demo"
 

@@ -299,7 +299,7 @@ enableRobotsTXT = true
     # customize the date format | only works if momentjs is disabled | only works with English month names
     # you can customize it with the options you find here:
     # https://gohugo.io/methods/time/format/
-    dateFormat = "Monday, January 2, 2006" //default is 2006-01-02
+    dateFormat = "Monday, January 2, 2006" #default is 2006-01-02
 
     # display the estimated reading time for an article
     showReadingTime = true
