@@ -1,6 +1,6 @@
 # Mostafa Hugo Theme
 
-[![Deploy Hugo Demo](https://github.com/mirmousaviii/mostafa-hugo-theme/actions/workflows/deploy.yml/badge.svg)](https://github.com/mirmousaviii/mostafa-hugo-theme/actions/workflows/hugo.yml)
+[![Deploy Status](https://github.com/mirmousaviii/mostafa-hugo-theme/actions/workflows/deploy.yml/badge.svg)](https://github.com/mirmousaviii/mostafa-hugo-theme/actions)
 
 Welcome to `mostafa-hugo-theme`! This is a flexible theme for Hugo.
 
@@ -8,6 +8,7 @@ The theme supports multiple languages, various content types, and integrates sea
 
 ## Table of Contents
 
+- [Live Demo](#live-demo)
 - [Features](#features)
 - [Installation](#installation)
   - [Install via Hugo Modules (Recommended)](#install-via-hugo-modules-recommended)
@@ -27,6 +28,10 @@ The theme supports multiple languages, various content types, and integrates sea
 - [Using Sample Content](#using-sample-content)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Live Demo
+
+Check out the live demo of the theme [here](https://mirmousaviii.github.io/mostafa-hugo-theme/).
 
 ## Features
 
