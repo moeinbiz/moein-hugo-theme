@@ -67,7 +67,7 @@ jobs:
           hugo \
             --minify \
             -s exampleSite \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL="https://mirmousaviii.github.io/mostafa-hugo-theme/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
