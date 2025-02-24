@@ -1,5 +1,7 @@
 # Mostafa Hugo Theme
 
+[![Deploy Hugo Demo](https://github.com/mirmousaviii/mostafa-hugo-theme/actions/workflows/deploy.yml/badge.svg)](https://github.com/mirmousaviii/mostafa-hugo-theme/actions/workflows/hugo.yml)
+
 Welcome to `mostafa-hugo-theme`! This is a flexible theme for Hugo.
 
 The theme supports multiple languages, various content types, and integrates seamlessly with social media platforms.
