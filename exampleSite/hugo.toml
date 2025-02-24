@@ -1,6 +1,6 @@
 baseURL = "https://mirmousaviii.github.io/mostafa-hugo-theme/" # You can use "/" in local
 languageCode = "en-us"
-title = "Mostafa Hugo Theme Demo"
+title = "Mostafa Hugo Theme"
 
 # Change to one of your content languages defined at the end.
 DefaultContentLanguage = "en"
@@ -11,9 +11,13 @@ googleAnalytics = "G-XXXXXXXXXX"
 # Generate the robots.txt file for SEO
 enableRobotsTXT = true
 
-[module]
-    [[module.imports]]
-        path = "github.com/mirmousaviii/mostafa-hugo-theme"
+
+theme = "mostafa-hugo-theme"
+# Use hugo module instead of direct theme path
+#[module]
+#    [[module.imports]]
+#        path = "github.com/mirmousaviii/mostafa-hugo-theme"
+
 
 [params]
     # Custom CSS / JS modules that will be imported by the template.
