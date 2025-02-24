@@ -7,7 +7,7 @@ tags: ['Hugo', 'Code']
 # author: "Mostafa"
 ---
 Je vindt alle informatie om dit thema in te stellen met je Hugo-site
-op de officiële <br> [Github Repository](https://github.com/mirmousaviii/mostafa-hugo-theme).
+op de officiële [Github Repository](https://github.com/mirmousaviii/mostafa-hugo-theme).
 
 <!--more-->
 

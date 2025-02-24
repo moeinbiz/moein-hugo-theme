@@ -6,7 +6,7 @@ categories: ['Code', 'Tutorials']
 tags: ['Hugo', 'Code']
 # author: "Mostafa"
 ---
-Alle Informationen zur Einrichtung dieses Themas mit Ihrer Hugo-Website finden Sie im offiziellen <br> [Github Repository](https://github.com/mirmousaviii/mostafa-hugo-theme).
+Alle Informationen zur Einrichtung dieses Themas mit Ihrer Hugo-Website finden Sie im offiziellen [Github Repository](https://github.com/mirmousaviii/mostafa-hugo-theme).
 
 <!--more-->
 
