@@ -35,7 +35,7 @@ The theme supports multiple languages, various content types, and integrates sea
 
 Check out the live demo of the theme [here](https://mirmousaviii.github.io/mostafa-hugo-theme/).
 
-\*Note: This theme developed for [mirmousavi.com](https://mirmousavi.com/) website, which you can find on [GitHub](https://github.com/mirmousaviii/blog).
+**Note**: This theme developed for [mirmousavi.com](https://mirmousavi.com/) website, which you can find on [GitHub](https://github.com/mirmousaviii/blog).
 
 ## Features
 
@@ -70,7 +70,7 @@ Edit your `config.toml` file and add:
         path = "github.com/mirmousaviii/mostafa-hugo-theme"
 ```
 
-\*Note: You can also use `hugo.toml` or other config instead of `config.toml` for configuration.*
+**Note**: You can also use `hugo.toml` or other config instead of `config.toml` for configuration.*
 
 #### 1.3 Fetch the theme
 
@@ -455,6 +455,7 @@ hugo server -s exampleSite
 ## TODO
 
 - [ ] Improve sample pages
+- [ ] improve vendor and assets
 - [ ] Light mode
 - [ ] Add navigation menu
 - [ ] Projects section

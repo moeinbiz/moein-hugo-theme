@@ -57,6 +57,14 @@ article {
             font-weight: bold;
         }
 
+        strong {
+            color: lighten($text-color, 15%);
+        }
+
+        li {
+            line-height: 120%;
+        }
+
         .meta {
             text-transform: uppercase;
             font-style: normal;
