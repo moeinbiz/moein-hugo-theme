@@ -2,7 +2,7 @@
 title: "Sample Audio"
 date: 2024-02-25T13:16:19+02:00
 tags: ["Sample", "Article", "Test"]
-categories: ["Test 01"]
+categories: ["Test"]
 #author: "Mostafa Mirmousavi"
 draft: false
 featuredImage: ""
@@ -14,6 +14,6 @@ tunein:     ""     # t117894382
 mixcloud:   ""     # scienceforthepeople/445-ai-ant-intelligence
 ---
 
-With the `audio` post type you can easily integrate a Spotify, SoundCloud, TuneIn or Mixcloud player to your post.
+With the audio post type you can easily integrate a Spotify, SoundCloud, TuneIn or Mixcloud player to your post.
 
-If you don't want to embed sound but use a header image you can set it with the `featuredImage` option in your markdown file.
+If you don't want to embed sound but use a header image you can set it with the featuredImage option in your markdown file.

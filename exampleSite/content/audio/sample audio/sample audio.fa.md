@@ -2,7 +2,7 @@
 title: "نمونه صدا"
 date: 2024-02-25T13:16:19+02:00
 tags: ["نمونه", "مقاله", "تست"]
-categories: ["تست 01"]
+categories: ["تست"]
 #author: "مصطفی میرموسوی"
 draft: false
 featuredImage: ""
@@ -14,7 +14,7 @@ tunein:     ""     # t117894382
 mixcloud:   ""     # scienceforthepeople/445-ai-ant-intelligence
 ---
 
-با استفاده از نوع پست `audio` می‌توانید به راحتی یک پخش‌کننده Spotify، SoundCloud، TuneIn یا Mixcloud را به پست خود اضافه کنید.
+با استفاده از نوع پست audio می‌توانید به راحتی یک پخش‌کننده Spotify، SoundCloud، TuneIn یا Mixcloud را به پست خود اضافه کنید.
 
-اگر نمی‌خواهید صدا را جاسازی کنید اما می‌خواهید از تصویر سربرگ استفاده کنید، می‌توانید آن را با گزینه `featuredImage` در فایل markdown خود تنظیم کنید.
+اگر نمی‌خواهید صدا را جاسازی کنید اما می‌خواهید از تصویر سربرگ استفاده کنید، می‌توانید آن را با گزینه featuredImage در فایل markdown خود تنظیم کنید.
 
