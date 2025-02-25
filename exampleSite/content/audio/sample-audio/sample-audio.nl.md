@@ -1,7 +1,7 @@
 ---
 title: "Voorbeeld Audio"
 date: 2024-02-25T13:16:19+02:00
-tags: ["Voorbeeld", "Artikel", "Test"]
+tags: ["voorbeeld", "artikel", "test"]
 categories: ["Test"]
 #author: "Mostafa Mirmousavi"
 draft: false

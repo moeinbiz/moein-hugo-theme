@@ -2,7 +2,7 @@
 title: "Themafuncties"
 date: 2024-07-25T13:16:19+02:00
 tags: ["demo", "functies", "test"]
-categories: ["Voorbeeld"]
+categories: ["voorbeeld"]
 author: "Mostafa Mirmousavi"
 noSummary: true
 draft: false

@@ -1,8 +1,8 @@
 ---
 title: "Introducing the theme"
 date: 2024-06-25T13:16:19+02:00
-tags: ["Mostafa Hugo Theme", "Features", "Guide"]
-categories: ["Themes", "Sample"]
+tags: ["mostafa hugo theme", "features", "guide"]
+categories: ["themes", "sample"]
 author: "Mostafa Mirmousavi" 
 draft: false
 ---

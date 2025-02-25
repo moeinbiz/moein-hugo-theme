@@ -1,8 +1,8 @@
 ---
 title: "Sample Audio"
 date: 2024-02-25T13:16:19+02:00
-tags: ["Sample", "Article", "Test"]
-categories: ["Test"]
+tags: ["sample", "article", "test", "demo"]
+categories: ["test"]
 #author: "Mostafa Mirmousavi"
 draft: false
 featuredImage: ""

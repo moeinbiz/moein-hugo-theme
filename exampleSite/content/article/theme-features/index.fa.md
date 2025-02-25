@@ -3,7 +3,7 @@ title: "ویژگی‌های قالب"
 
 tags: ["دمو", "ویژگی‌ها", "تست"]
 
-categories: ["Sample"]
+categories: ["sample"]
 
 author: "مصطفی میرموسوی"
 

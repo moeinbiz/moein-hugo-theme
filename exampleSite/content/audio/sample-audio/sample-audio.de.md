@@ -1,8 +1,8 @@
 ---
 title: "Beispiel Audio"
 date: 2024-02-25T13:16:19+02:00
-tags: ["Beispiel", "Artikel", "Test"]
-categories: ["Test"]
+tags: ["beispiel", "artikel", "test"]
+categories: ["test"]
 #author: "Mostafa Mirmousavi"
 draft: false
 featuredImage: ""

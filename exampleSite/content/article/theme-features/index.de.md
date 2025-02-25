@@ -2,7 +2,7 @@
 title: "Theme-Funktionen"
 date: 2024-07-25T13:16:19+02:00
 tags: ["demo", "funktionen", "test"]
-categories: ["Beispiel"]
+categories: ["beispiel"]
 author: "Mostafa Mirmousavi"
 noSummary: true
 draft: false

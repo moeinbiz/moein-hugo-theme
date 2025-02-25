@@ -2,7 +2,7 @@
 title: "Theme features"
 date: 2024-07-25T13:16:19+02:00
 tags: ["demo", "features", "test"]
-categories: ["Sample"]
+categories: ["sample"]
 author: "Mostafa Mirmousavi"
 noSummary: true
 draft: false
