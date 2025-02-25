@@ -1,7 +1,8 @@
 ---
 date: 2021-12-15T10:45:44+02:00
+categories: ['About']
 showDate: false
+icon: 'fa-user'
 ---
-Dies ist ein Beispiel-Status-Update zu Testzwecken.
-Fühlen Sie sich frei, diesen Inhalt nach Ihren Bedürfnissen zu ändern.
-Denken Sie daran, Ihre Status-Updates kurz und informativ zu halten.
+This is an example of status update for testing purposes.
+You can use **showDate: false** to hide the date from the status update. Also, you can use **weight: 10** to set the order of the status update. 

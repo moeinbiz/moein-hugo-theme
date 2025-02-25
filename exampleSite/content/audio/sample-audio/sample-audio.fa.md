@@ -2,7 +2,7 @@
 title: "نمونه صدا"
 date: 2024-02-25T13:16:19+02:00
 tags: ["نمونه", "مقاله", "تست"]
-categories: ["تست"]
+categories: ["test"]
 #author: "مصطفی میرموسوی"
 draft: false
 featuredImage: ""

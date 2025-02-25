@@ -454,8 +454,8 @@ hugo server -s exampleSite
 
 ## TODO
 
-- [ ] Improve sample pages
-- [ ] improve vendor and assets
+- [ ] Add subtitle to the theme
+- [ ] Improve vendor and assets
 - [ ] Light mode
 - [ ] Add navigation menu
 - [ ] Projects section

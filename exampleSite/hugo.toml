@@ -120,7 +120,7 @@ theme = "mostafa-hugo-theme"
     # all icons https://fontawesome.com/icons?d=gallery&m=free
     # brand icons https://fontawesome.com/icons?d=gallery&s=brands&m=free
     socialMediaLinks = [
-        { name = "GitHub", link = "https://github.com/mirmousaviii", icon = "fab fa-github"},
+        { name = "GitHub", link = "https://github.com/mirmousaviii/mostafa-hugo-theme", icon = "fab fa-github"},
         { name = "Linkedin", link = "https://linkedin.com/in/mirmousavi/en", icon = "fab fa-linkedin" },
         { name = "Twitter / X", link = "https://twitter.com/mirmousaviii", icon = "fab fa-twitter" },
         { name = "RSS", link = "/index.xml", icon = "fas fa-rss" },
@@ -129,7 +129,8 @@ theme = "mostafa-hugo-theme"
     # show other links in the footer
     otherLinks = [
         { name = "Garmin Apps", link = "https://apps.garmin.com/developer/763f08dc-2be1-402f-b9b3-f3861b4df947/apps"},
-        { name = "Mirmousavi.com", link = "https://mirmousavi.com/"},
+        { name = "GithHb.com", link = "https://github.com/mirmousaviii/mostafa-hugo-theme"},
+        { name = "mirmousavi.com", link = "https://mirmousavi.com/"},
     ]
 
     # show an archive link in the footer

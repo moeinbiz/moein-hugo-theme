@@ -1,5 +1,5 @@
 ---
-title: "Write code in Markdown"
+title: "نمایش کد در متن‌ها"
 tags: ["theme", "کد", "مارک‌دان", "دمو"]
 author: "مصطفی میرموسوی"
 categories: ["tutorials"]
