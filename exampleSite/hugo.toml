@@ -5,8 +5,8 @@ title = "Mostafa Hugo Theme"
 # Change to one of your content languages defined at the end.
 DefaultContentLanguage = "en"
 
-# Enable / Disable Google Analytics statistics
-googleAnalytics = "G-XXXXXXXXXX"
+# Enable Google Analytics statistics by entering your tracking code
+googleAnalytics = "G-08XG9MTFDE"
 
 # Generate the robots.txt file for SEO
 enableRobotsTXT = true
