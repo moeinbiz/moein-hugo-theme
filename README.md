@@ -35,6 +35,8 @@ The theme supports multiple languages, various content types, and integrates sea
 
 Check out the live demo of the theme [here](https://mirmousaviii.github.io/mostafa-hugo-theme/).
 
+\*Note: This theme developed for [mirmousavi.com](https://mirmousavi.com/) website, which you can find on [GitHub](https://github.com/mirmousaviii/blog).
+
 ## Features
 
 - Lightweight and fast
@@ -449,6 +451,13 @@ Alternatively, you can start the Hugo server directly from the `exampleSite` dir
 ```bash
 hugo server -s exampleSite
 ```
+
+## TODO
+
+- [ ] Improve sample pages
+- [ ] Light mode
+- [ ] Add navigation menu
+- [ ] Projects section
 
 ## Contributing
 
