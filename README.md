@@ -121,7 +121,7 @@ Here are the configuration options for the theme.
 
 ### Basic Settings
 
-- `baseURL`: The website URL (<https://mirmousavi.com/>)
+- `baseURL`: The website URL
 - `title`: Main site title
 - `DefaultContentLanguage`: Default content language (en)
 - `googleAnalytics`: Google Analytics tracking ID
@@ -133,7 +133,7 @@ Here are the configuration options for the theme.
 
 - `resizeImages`: Automatically resizes and crops images
 - `contentFont`: Main font for LTR content
-- `contentRTLFont`: Font for RTL content (Vazirmatn)
+- `contentRTLFont`: Font for RTL content
 
 #### Content Display
 
@@ -169,7 +169,7 @@ The site supports multiple languages:
 - German (de-DE)
 - Dutch (nl-NL)
 - Persian (fa-IR)
-- etc. (see './i18n/')
+- etc. (see [i18n directory in the theme](i18n)
 
 Each language can have its own:
 
@@ -194,7 +194,7 @@ Each language can have its own:
 
 ## Sample Configurations
 
-Here is asample configurations for the theme.
+Here is an example of configurations for the theme.
 
 ```toml
 baseURL = 'https://mirmousavi.com/'
@@ -433,17 +433,20 @@ Feel free to modify the sample content to suit your needs.
 
 ### Use exampleSite
 
-Alternatively, you can start the Hugo server directly from the `exampleSite` directory JUST FOR TEST:
+You can start the Hugo server directly from the `exampleSite` directory JUST FOR TEST:
 
 ```bash
-hugo server -s exampleSite
+hugo server --source exampleSite
+
+# or
+hugo server --source exampleSite --themesDir ../.. --baseURL "http://localhost/"
 ```
 
 ## TODO
 
 - [ ] Add subtitle to the theme
 - [ ] Improve vendor and assets
-- [ ] Light mode
+- [ ] Light mode and switcher button
 - [ ] Add navigation menu
 - [ ] Projects section
 
