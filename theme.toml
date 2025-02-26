@@ -1,12 +1,34 @@
 name = 'Mostafa Hugo Theme'
 license = 'MIT'
 licenselink = 'https://github.com/mirmousaviii/mostafa-hugo-theme/blob/main/LICENSE'
-description = 'A simple and modern Hugo theme'
+description = 'A simple Hugo theme with supports multiple languages and various content types.'
 homepage = 'https://github.com/mirmousaviii/mostafa-hugo-theme'
-demosite = 'https://mirmousavi.com/'
-tags = ['blog', 'minimal', 'responsive', 'multilingual', 'personal', 'dark', 'modern']
-features = ['lightweight', 'fast', 'media']
+demosite = 'https://mirmousaviii.github.io/mostafa-hugo-theme/'
+tags = [
+    'blog',
+    'minimal',
+    'responsive',
+    'multilingual',
+    'personal',
+    'dark',
+    'modern',
+    'simple'
+]
+features = [
+    'multilingual',
+    'content-types',
+    'responsive',
+    'single-column',
+    'blog',
+    'media',
+    'cover-image',
+    'archive',
+    'social-icons',
+    'minified-assets',
+    'scroll-to-top'
+]
+min_version = "0.125.7"
+
 [author]
   name = 'Mostafa Mirmousavi'
   homepage = 'https://mirmousavi.com/'
-min_version = "0.142.0"
