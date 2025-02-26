@@ -6,13 +6,13 @@ homepage = 'https://github.com/mirmousaviii/mostafa-hugo-theme'
 demosite = 'https://mirmousaviii.github.io/mostafa-hugo-theme/'
 tags = [
     'blog',
-    'minimal',
     'responsive',
+    'minimal',
     'multilingual',
     'personal',
     'dark',
-    'modern',
-    'simple'
+    'portfolio',
+    'gallery',
 ]
 features = [
     'multilingual',
