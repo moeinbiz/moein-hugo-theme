@@ -18,9 +18,9 @@
 
 ## Demo
 
-Check out the demo of the theme [here](https://mirmousaviii.github.io/mostafa-hugo-theme/).
+Check out the demo of the theme from [https://mirmousaviii.github.io/mostafa-hugo-theme](https://mirmousaviii.github.io/mostafa-hugo-theme/).
 
-Also, the theme is used in the [mirmousavi.com](https://mirmousavi.com/) website.
+Also, the theme is used in [https://mirmousavi.com](https://mirmousavi.com/).
 
 ![Screenshot](https://raw.githubusercontent.com/mirmousaviii/mostafa-hugo-theme/main/images/screenshot.png)
 
@@ -37,7 +37,7 @@ Also, the theme is used in the [mirmousavi.com](https://mirmousavi.com/) website
 
 You can install `mostafa-hugo-theme` using different methods depending on your preference.
 
-### Install via Hugo Modules (Recommended)
+### 1. Install via Hugo Modules (Recommended)
 
 #### 1.1 Initialize Hugo Modules (if not already initialized)
 
@@ -67,9 +67,9 @@ Run:
 hugo mod tidy
 ```
 
-✅ Done! The theme is now installed, and Hugo will automatically pull updates when you run `hugo mod tidy`.
+Done! The theme is now installed, and Hugo will automatically pull updates when you run `hugo mod tidy`.
 
-### Install via Git Submodule (Advanced Users)
+### 2. Install via Git Submodule (Advanced Users)
 
 #### 2.1 Add the theme as a submodule
 
@@ -93,27 +93,15 @@ git submodule update --init --recursive
 theme = "mostafa-hugo-theme"
 ```
 
-✅ Now the theme is linked to your project as a submodule! To update it, use:
+Now the theme is linked to your project as a submodule! To update it, use:
 
 ```bash
 git submodule update --remote --merge
 ```
 
-### Install via Manual Download (For Non-Git Users)
+### 3. Clone or Download the Theme
 
-If you don’t use Git, you can download the theme manually.
-
-#### 3.1 Download the theme
-
-1. Go to [GitHub Repository](https://github.com/mirmousaviii/mostafa-hugo-theme).
-2. Click on **"Code" → "Download ZIP"**.
-3. Extract the ZIP file and place it inside your Hugo project under `themes/mostafa-hugo-theme/`.
-
-#### 3.2 Set the theme in `config.toml`
-
-```toml
-theme = "mostafa-hugo-theme"
-```
+You can also clone or download the theme directly into your project's `themes` directory.
 
 ## Configuration
 
@@ -449,6 +437,7 @@ hugo server --source exampleSite --themesDir ../.. --baseURL "http://localhost/"
 - [ ] Light mode and switcher button
 - [ ] Add navigation menu
 - [ ] Projects section
+- [ ] Change the theme color and font
 
 ## Contributing
 

@@ -28,9 +28,9 @@ theme = "mostafa-hugo-theme"
 
     # Description and meta data for the search engines
     author = "Mostafa Mirmousavi"
-    description = "Software Engineer"
-    keywords = "javascript, typescript, react, nodejs, monkeyc"
-    subtitle = "A software engineer"
+    description = "A simple Hugo theme with supports multiple languages and various content types."
+    keywords = "Hugo, theme, blog, responsive, minimal, multilingual, personal, dark, portfolio, gallery"
+    subtitle = "Theme Demo"
 
 
     # How many articles should be displayed at once?
