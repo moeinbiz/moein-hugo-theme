@@ -1,50 +1,37 @@
 # Mostafa Hugo Theme
 
 [![Deploy Status](https://github.com/mirmousaviii/mostafa-hugo-theme/actions/workflows/deploy.yml/badge.svg)](https://github.com/mirmousaviii/mostafa-hugo-theme/actions)
+[![Hugo](https://img.shields.io/static/v1?label=min-HUGO-version&message=>=v0.125.7&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.125.7)
+[![License](https://img.shields.io/github/license/mirmousaviii/mostafa-hugo-theme)](https://github.com/mirmousaviii/mostafa-hugo-theme/blob/main/LICENSE)
 
-Welcome to `mostafa-hugo-theme`! This is a flexible theme for Hugo.
+Mostafa Hugo Theme is a modern and responsive theme for Hugo static site generator. The theme supports multiple languages, various content types, and integrates seamlessly with social media platforms.
 
-The theme supports multiple languages, various content types, and integrates seamlessly with social media platforms.
-
-## Table of Contents
-
-- [Live Demo](#live-demo)
+- [Demo](#demo)
 - [Features](#features)
 - [Installation](#installation)
-  - [Install via Hugo Modules (Recommended)](#install-via-hugo-modules-recommended)
-    - [1.1 Initialize Hugo Modules](#11-initialize-hugo-modules-if-not-already-initialized)
-    - [1.2 Add the theme as a module](#12-add-the-theme-as-a-module)
-    - [1.3 Fetch the theme](#13-fetch-the-theme)
-  - [Install via Git Submodule (Advanced Users)](#install-via-git-submodule-advanced-users)
-    - [2.1 Add the theme as a submodule](#21-add-the-theme-as-a-submodule)
-    - [2.2 Initialize and update the submodule](#22-initialize-and-update-the-submodule)
-    - [2.3 Set the theme in `config.toml`](#23-set-the-theme-in-configtoml)
-  - [Install via Manual Download (For Non-Git Users)](#install-via-manual-download-for-non-git-users)
-    - [3.1 Download the theme](#31-download-the-theme)
-    - [3.2 Set the theme in `config.toml`](#32-set-the-theme-in-configtoml)
 - [Configuration](#configuration)
 - [Sample Configurations](#sample-configurations)
 - [Running Your Hugo Site](#running-your-hugo-site)
 - [Using Sample Content](#using-sample-content)
-  - [Copy sample content to your site](#copy-sample-content-to-your-site)
-  - [Use exampleSite](#use-examplesite)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Live Demo
+## Demo
 
-Check out the live demo of the theme [here](https://mirmousaviii.github.io/mostafa-hugo-theme/).
+Check out the demo of the theme [here](https://mirmousaviii.github.io/mostafa-hugo-theme/).
 
-**Note**: This theme developed for [mirmousavi.com](https://mirmousavi.com/) website, which you can find on [GitHub](https://github.com/mirmousaviii/blog).
+Also, the theme is used in the [mirmousavi.com](https://mirmousavi.com/) website.
+
+![Screenshot](https://raw.githubusercontent.com/mirmousaviii/mostafa-hugo-theme/main/images/screenshot.png)
 
 ## Features
 
-- Lightweight and fast
 - Responsive design
+- Supports various content types (articles, pages, galleries, videos, etc.)
 - Multilingual support
 - Dark and modern theme
-- Supports various content types (posts, pages, galleries, videos, etc.)
 - Integrated with social media
+- Customizable Layouts
 
 ## Installation
 

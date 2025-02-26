@@ -1,4 +1,4 @@
-name: Deploy Hugo Demo
+name: Deploy Demo
 
 on:
   # Runs on pushes targeting the default branch
