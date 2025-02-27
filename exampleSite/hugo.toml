@@ -11,12 +11,10 @@ googleAnalytics = "G-08XG9MTFDE"
 # Generate the robots.txt file for SEO
 enableRobotsTXT = true
 
-
 theme = "mostafa-hugo-theme"
 #[module]
 #    [[module.imports]]
 #        path = "github.com/mirmousaviii/mostafa-hugo-theme"
-
 
 [params]
     # Custom CSS / JS modules that will be imported by the template.
@@ -46,7 +44,6 @@ theme = "mostafa-hugo-theme"
     # always display the top navigation when scrolling
     # works only with permanentTopNav = true
     #stickyNav = true
-
 
     # Style configuration
     #contentFont = "'Open Sans',sans-serif"
@@ -97,7 +94,7 @@ theme = "mostafa-hugo-theme"
     # customize the date format | only works if momentjs is disabled | only works with English month names
     # you can customize it with the options you find here:
     # https://gohugo.io/methods/time/format/
-    dateFormat = "Monday, January 2, 2006"
+    #dateFormat = "Monday, January 2, 2006" #default is 2006-01-02
 
     # display the estimated reading time for an article
     showReadingTime = true

@@ -4,7 +4,7 @@
 [![Hugo](https://img.shields.io/static/v1?label=min-HUGO-version&message=>=v0.125.7&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.125.7)
 [![License](https://img.shields.io/github/license/mirmousaviii/mostafa-hugo-theme)](https://github.com/mirmousaviii/mostafa-hugo-theme/blob/main/LICENSE)
 
-### A responsive theme with supports multiple languages and various content types
+### A responsive theme with supports multilingual and various content types
 
 - [Demo](#demo)
 - [Features](#features)
@@ -29,9 +29,11 @@ Also, the theme is used in [https://mirmousavi.com](https://mirmousavi.com/).
 - Responsive design
 - Supports various content types (articles, pages, galleries, videos, etc.)
 - Multilingual support
+- RTL support
 - Dark and modern theme
 - Integrated with social media
 - Customizable Layouts
+
 
 ## Installation
 
@@ -433,10 +435,13 @@ hugo server --source exampleSite --themesDir ../.. --baseURL "http://localhost/"
 ## TODO
 
 - [ ] Add subtitle to the theme
+- [ ] Improve style of footer in articles
 - [ ] Improve vendor and assets
 - [ ] Light mode and switcher button
 - [ ] Add navigation menu
 - [ ] Projects section
+- [ ] Improve for podcast website
+- [ ] Add document per post type
 - [ ] Change the theme color and font
 
 ## Contributing
