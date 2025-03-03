@@ -23,11 +23,46 @@
 
     }
 
-    .languages {
-        margin-left: 0;
-        text-align: center;
+
+
+
+    .navigation  {
+        // margin-left: 0;
+        // margin-right: 0;
+        // justify-content: center;
 
     }
+    .navigation  ul {
+        //margin-top: 5px;
+    }
+    .languages {
+        //margin-left: 0;
+        //text-align: center;
+
+    }
+
+    .menu-wrapper ul .menu-toggle {
+        display: block;
+    }
+
+    .menu-wrapper ul li {
+        display: none;
+    }
+
+    .menu-wrapper ul li.menu-toggle {
+        display: block;
+    }
+
+    .menu-wrapper.active ul li {
+        display: block;
+    }
+
+    .menu-wrapper .menu-button {
+    }
+
+
+
+
 
     .bubble {
         display: none !important;

@@ -81,8 +81,26 @@ header {
 
 }
 
-.languages {
+.navigation {
     margin-left: 50px;
+    margin-right: 50px;
+
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+}
+
+
+.pages,
+.languages {
+    //margin-left: 50px;
+
+    //display: flex;
+    //justify-content: flex-end;
+    //margin-right: 50px;
+
 
     ul {
         display: inline-block;
@@ -106,7 +124,8 @@ header {
             box-shadow: 1px 0 0 #2c2c2c;
             -webkit-box-shadow: 1px 0 0 #2c2c2c;
 
-            width: 70px;
+            //width: 70px;
+            min-width: 70px;
             text-align: center;
 
             a {

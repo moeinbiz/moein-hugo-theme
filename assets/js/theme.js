@@ -95,4 +95,17 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop:0}, '300');
     });
 
+    // Toggle menu items on small screens
+    $('.menu-toggle').on('click', function (e) {
+        e.preventDefault();
+        $(this).closest('.menu-wrapper').toggleClass('active');
+    });
+
+    // Close menu when clicking outside
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.menu-wrapper').length) {
+            $('.menu-wrapper').removeClass('active');
+        }
+    });
+
 });
