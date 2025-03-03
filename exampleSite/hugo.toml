@@ -32,7 +32,7 @@ theme = "mostafa-hugo-theme"
 
 
     # How many articles should be displayed at once?
-    paginate = 10
+    paginate = 3
 
     # Media configuration
     # let hugo automatically resize and crop your images to the correct sizes
@@ -153,6 +153,13 @@ theme = "mostafa-hugo-theme"
         title = "Mostafa Hugo Theme"
         [Languages.en.params]
             subtitle = "Theme Demo"
+        pageNavigation = [
+            { name = "All Posts", link = "/" },
+            { name = "Categories", link = "/categories/" },
+            { name = "Tags", link = "/tags/" },
+            { name = "About", link = "/categories/about/" },
+        ]
+
     [Languages.de]
         weight = 20
         languageCode = 'de-DE'
@@ -161,6 +168,13 @@ theme = "mostafa-hugo-theme"
         title = "Mostafa Hugo Theme"
         [Languages.de.params]
             subtitle = "Theme Demo"
+        pageNavigation = [
+            { name = "Alle Beiträge", link = "/" },
+            { name = "Kategorien", link = "/categories/" },
+            { name = "Tags", link = "/tags/" },
+            { name = "Über", link = "/categories/about/" },
+        ]
+
     [Languages.nl]
         weight = 30
         languageCode = 'nl-NL'
@@ -169,6 +183,13 @@ theme = "mostafa-hugo-theme"
         title = "Mostafa Hugo Theme"
         [Languages.nl.params]
             subtitle = "Theme Demo"
+        pageNavigation = [
+            { name = "Alle berichten", link = "/" },
+            { name = "Categorieën", link = "/categories/" },
+            { name = "Tags", link = "/tags/" },
+            { name = "Over", link = "/categories/about/" },
+        ]
+
     [Languages.fa]
         weight = 40
         languageCode = 'fa-IR'
@@ -177,7 +198,12 @@ theme = "mostafa-hugo-theme"
         title = "قالب هوگو مصطفی"
         [Languages.fa.params]
             subtitle = "نمونه سایت"
-    
+        pageNavigation = [
+            { name = "درباره", link = "/categories/about/" },
+            { name = "برچسب‌ها", link = "/tags/" },
+            { name = "دسته‌بندی‌ها", link = "/categories/" },
+            { name = "پست‌ها", link = "/" },
+        ]
 
 [markup]
     defaultMarkdownHandler = 'goldmark'

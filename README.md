@@ -145,10 +145,8 @@ Here are the configuration options for the theme.
   - LinkedIn
   - Twitter
   - Email
+  - etc.
 - `otherLinks`: Additional footer links
-  - Garmin Apps
-  - Persian LUG
-  - CoderConf
 - `showFooter`: Controls footer visibility
 
 ### Multilingual Support
@@ -432,17 +430,22 @@ hugo server --source exampleSite
 hugo server --source exampleSite --themesDir ../.. --baseURL "http://localhost/"
 ```
 
+## Recent Features
+- [x] Navigation menu for pages
+
+
 ## TODO
 
-- [ ] Add subtitle to the theme
+- [ ] improve style of table
+- [ ] Improve style text
 - [ ] Improve style of footer in articles
+- [ ] Projects as a post type
+- [ ] Add subtitle
 - [ ] Improve vendor and assets
 - [ ] Light mode and switcher button
-- [ ] Add navigation menu
-- [ ] Projects section
 - [ ] Improve for podcast website
-- [ ] Add document per post type
-- [ ] Change the theme color and font
+- [ ] Improve the theme color and font
+- [ ] Cookie Modal (GDPR)
 
 ## Contributing
 

@@ -21,28 +21,47 @@
 </header>
 
 
-{{ if and (gt .Site.Languages 1) (.Site.Params.showHeaderLanguageChooser | default true) }}
-{{- $language := .Language -}}
-{{- $pages := .Page.AllTranslations -}}
-<div class="languages">
-    <ul>
-        {{ range $.Site.Home.AllTranslations }}
-        {{ $url := .RelPermalink }}
-        {{ range where $pages "Lang" .Language.Lang }}
-        {{ $url = .RelPermalink }}
-        {{ end }}
+<div class="navigation">
 
+    <!-- Page Navigation -->
+    {{ if .Site.Params.pageNavigation }}
+    <div class="pages menu-wrapper">
+        <ul>
+            {{ range .Site.Params.pageNavigation }}
+            <li {{ if eq .link $.Page.RelPermalink }} class="active menu-toggle"{{ end }}>
+                <a href="{{ .link }}">{{ .name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
 
-        {{ if eq $language .Language }}
-        <li class="active"><a href="{{ $url }}">
-            {{ .Language.LanguageName }}
-        </a></li>
-        {{ else }}
-        <li><a href="{{ $url }}">
-            {{ .Language.LanguageName }}
-        </a></li>
-        {{ end }}
-        {{ end }}
-    </ul>
+    <!-- Language Chooser -->
+    {{ if and (gt .Site.Languages 1) (.Site.Params.showHeaderLanguageChooser | default true) }}
+    {{- $language := .Language -}}
+    {{- $pages := .Page.AllTranslations -}}
+    <div class="languages menu-wrapper">
+        <ul>
+            {{ range $.Site.Home.AllTranslations }}
+            {{ $url := .RelPermalink }}
+            {{ range where $pages "Lang" .Language.Lang }}
+            {{ $url = .RelPermalink }}
+            {{ end }}
+
+            {{ if eq $language .Language }}
+            <li class="active menu-toggle"><a href="{{ $url }}">
+                {{ .Language.LanguageName }}
+            </a></li>
+            {{ else }}
+            <li><a href="{{ $url }}">
+                {{ .Language.LanguageName }}
+            </a></li>
+            {{ end }}
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
 </div>
-{{ end }}
+
+
