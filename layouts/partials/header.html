@@ -27,9 +27,15 @@
     {{ if .Site.Params.pageNavigation }}
     <div class="pages menu-wrapper">
         <ul>
+            {{ $activeFound := false }}
             {{ range .Site.Params.pageNavigation }}
-            <li {{ if eq .link $.Page.RelPermalink }} class="active menu-toggle"{{ end }}>
+            <li {{ if eq .link $.Page.RelPermalink }} class="active menu-toggle"{{ $activeFound = true }}{{ end }}>
                 <a href="{{ .link }}">{{ .name }}</a>
+            </li>
+            {{ end }}
+            {{ if not $activeFound }}
+            <li class="active menu-toggle">
+                <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
             </li>
             {{ end }}
         </ul>
