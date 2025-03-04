@@ -58,6 +58,11 @@
     }
 
     .menu-wrapper .menu-button {
+        display: block;
+    }
+
+    .menu-wrapper.active .menu-button {
+        display: none;
     }
 
 

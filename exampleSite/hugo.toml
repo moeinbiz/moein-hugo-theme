@@ -154,10 +154,10 @@ theme = "mostafa-hugo-theme"
         [Languages.en.params]
             subtitle = "Theme Demo"
         pageNavigation = [
-            { name = "All Posts", link = "/" },
-            { name = "Categories", link = "/categories/" },
-            { name = "Tags", link = "/tags/" },
-            { name = "About", link = "/categories/about/" },
+            { name = "All Posts", link = "" },
+            { name = "Categories", link = "categories/" },
+            { name = "Tags", link = "tags/" },
+            { name = "About", link = "categories/about/" },
         ]
 
     [Languages.de]
@@ -169,10 +169,10 @@ theme = "mostafa-hugo-theme"
         [Languages.de.params]
             subtitle = "Theme Demo"
         pageNavigation = [
-            { name = "Alle Beiträge", link = "/" },
-            { name = "Kategorien", link = "/categories/" },
-            { name = "Tags", link = "/tags/" },
-            { name = "Über", link = "/categories/about/" },
+            { name = "Alle Beiträge", link = "" },
+            { name = "Kategorien", link = "categories/" },
+            { name = "Tags", link = "tags/" },
+            { name = "Über", link = "categories/about/" },
         ]
 
     [Languages.nl]
@@ -184,10 +184,10 @@ theme = "mostafa-hugo-theme"
         [Languages.nl.params]
             subtitle = "Theme Demo"
         pageNavigation = [
-            { name = "Alle berichten", link = "/" },
-            { name = "Categorieën", link = "/categories/" },
-            { name = "Tags", link = "/tags/" },
-            { name = "Over", link = "/categories/about/" },
+            { name = "Alle berichten", link = "" },
+            { name = "Categorieën", link = "categories/" },
+            { name = "Tags", link = "tags/" },
+            { name = "Over", link = "categories/about/" },
         ]
 
     [Languages.fa]
@@ -199,10 +199,10 @@ theme = "mostafa-hugo-theme"
         [Languages.fa.params]
             subtitle = "نمونه سایت"
         pageNavigation = [
-            { name = "درباره", link = "/categories/about/" },
-            { name = "برچسب‌ها", link = "/tags/" },
-            { name = "دسته‌بندی‌ها", link = "/categories/" },
-            { name = "پست‌ها", link = "/" },
+            { name = "درباره", link = "categories/about/" },
+            { name = "برچسب‌ها", link = "tags/" },
+            { name = "دسته‌بندی‌ها", link = "categories/" },
+            { name = "پست‌ها", link = "" },
         ]
 
 [markup]
