@@ -2,18 +2,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0 50px;
-
     border-bottom: 1px solid #000000;
     box-shadow: 0 1px 0 #2c2c2c;
-
-    .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-    }
 
     a {
         color: $header-text-color;
@@ -22,25 +13,41 @@ header {
         }
     }
 
-    .title {
-        //line-height: 150%;
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
 
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin-right: auto;
+    }
 
+    .title {
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
         font-family: system-ui, sans-serif;
-        //font-size: 3.25rem;
         font-size: 4.5rem;
         font-weight: 900;
         text-transform: uppercase;
+    }
 
+    .subtitle {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-family: system-ui, sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+        //color: $header-text-color;
+        text-transform: none;
+        line-height:  200%;
     }
 
     nav {
-        //justify-content: flex-end;
-        //display: flex;
-        //align-items: center;
         text-align: center;
 
         ul {
@@ -51,23 +58,13 @@ header {
                 display: inline-block;
                 padding: 0 20px;
                 margin: 0;
-
-
-                //margin-right: 10px;
-                //display: inline-block;
-
                 border-right: 1px solid #000000;
                 box-shadow: 1px 0 0 #2c2c2c;
-                -webkit-box-shadow: 1px 0 0 #2c2c2c;
-
 
                 a {
                     text-decoration: none;
                     font-size: 2.5rem;
-
-
                 }
-
             }
 
             li:last-child {
@@ -77,8 +74,6 @@ header {
             }
         }
     }
-
-
 }
 
 .navigation {

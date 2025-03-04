@@ -466,11 +466,6 @@ hugo server --source exampleSite --themesDir ../.. --baseURL "http://localhost/"
 
 ## TODO
 
-- [ ] Improve style text
-- [ ] Improve style of footer in articles
-- [ ] Improve pages like tags, categories
-- [ ] Projects as a post type
-- [ ] Add subtitle
 - [ ] Improve vendor and assets
 - [ ] Light mode and switcher button
 - [ ] Improve for podcast website

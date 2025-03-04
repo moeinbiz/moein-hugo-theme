@@ -54,7 +54,7 @@ theme = "mostafa-hugo-theme"
     author = "Mostafa Mirmousavi"
     description = "A simple Hugo theme with supports multiple languages and various content types."
     keywords = "Hugo, theme, blog, responsive, minimal, multilingual, personal, dark, portfolio, gallery"
-    subtitle = "Theme Demo"
+    subtitle = "A subtitle for demonstration purposes"
 
 
     # How many articles should be displayed at once?
@@ -194,7 +194,7 @@ theme = "mostafa-hugo-theme"
             url = "/categories/about/"
             weight = 40
         [Languages.en.params]
-            subtitle = "Theme Demo"
+            subtitle = "A subtitle for demonstration purposes"
     [Languages.de]
         weight = 20
         languageCode = 'de-DE'
@@ -218,7 +218,7 @@ theme = "mostafa-hugo-theme"
             url = "/de/categories/about/"
             weight = 40
         [Languages.de.params]
-            subtitle = "Theme Demo"
+            subtitle = "A subtitle for demonstration purposes"
     [Languages.nl]
         weight = 30
         languageCode = 'nl-NL'
@@ -242,7 +242,7 @@ theme = "mostafa-hugo-theme"
             url = "/nl/categories/about/"
             weight = 40
         [Languages.nl.params]
-            subtitle = "Theme Demo"
+            subtitle = "A subtitle for demonstration purposes"
     [Languages.fa]
         weight = 40
         languageCode = 'fa-IR'
@@ -266,7 +266,7 @@ theme = "mostafa-hugo-theme"
             url = "/fa/categories/about/"
             weight = 10
         [Languages.fa.params]
-            subtitle = "نمونه سایت"
+        subtitle = "یک زیرنویس برای تست سایت نمونه"
 
 [markup]
     defaultMarkdownHandler = 'goldmark'
