@@ -32,7 +32,7 @@ theme = "mostafa-hugo-theme"
 
 
     # How many articles should be displayed at once?
-    paginate = 3
+    paginate = 10
 
     # Media configuration
     # let hugo automatically resize and crop your images to the correct sizes
