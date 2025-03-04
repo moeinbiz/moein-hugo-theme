@@ -34,7 +34,6 @@ Also, the theme is used in [https://mirmousavi.com](https://mirmousavi.com/).
 - Integrated with social media
 - Customizable Layouts
 
-
 ## Installation
 
 You can install `mostafa-hugo-theme` using different methods depending on your preference.
@@ -165,6 +164,7 @@ Each language can have its own:
 - Subtitle
 - Language direction (LTR/RTL)
 - Weight (for ordering)
+- PageNavigation (page name and links)
 
 ### Markdown Settings
 
@@ -335,33 +335,60 @@ enableRobotsTXT = true
         languageCode = 'en-US'
         languageDirection = 'ltr'
         languageName = 'English'
-        title = "Mostafa Mirmousavi"
+        title = "Mostafa Hugo Theme"
         [Languages.en.params]
-            subtitle = "Software Engineer"
+            subtitle = "Theme Demo"
+        pageNavigation = [
+            { name = "All Posts", link = "/" },
+            { name = "Categories", link = "/categories/" },
+            { name = "Tags", link = "/tags/" },
+            { name = "About", link = "/categories/about/" },
+        ]
+
     [Languages.de]
         weight = 20
         languageCode = 'de-DE'
         languageDirection = 'ltr'
         languageName = 'German'
-        title = "Mostafa Mirmousavi"
+        title = "Mostafa Hugo Theme"
         [Languages.de.params]
-            subtitle = "Softwareentwickler"
+            subtitle = "Theme Demo"
+        pageNavigation = [
+            { name = "Alle Beiträge", link = "/" },
+            { name = "Kategorien", link = "/categories/" },
+            { name = "Tags", link = "/tags/" },
+            { name = "Über", link = "/categories/about/" },
+        ]
+
     [Languages.nl]
         weight = 30
         languageCode = 'nl-NL'
         languageDirection = 'ltr'
         languageName = 'Dutch'
-        title = "Mostafa Mirmousavi"
+        title = "Mostafa Hugo Theme"
         [Languages.nl.params]
-            subtitle = "Software Engineer"
+            subtitle = "Theme Demo"
+        pageNavigation = [
+            { name = "Alle berichten", link = "/" },
+            { name = "Categorieën", link = "/categories/" },
+            { name = "Tags", link = "/tags/" },
+            { name = "Over", link = "/categories/about/" },
+        ]
+
     [Languages.fa]
         weight = 40
         languageCode = 'fa-IR'
         languageDirection = 'rtl'
         languageName = 'Persian'
-        title = "مصطفی میرموسوی"
+        title = "قالب هوگو مصطفی"
         [Languages.fa.params]
-            subtitle = "برنامه نویس"
+            subtitle = "نمونه سایت"
+        pageNavigation = [
+            { name = "درباره", link = "/categories/about/" },
+            { name = "برچسب‌ها", link = "/tags/" },
+            { name = "دسته‌بندی‌ها", link = "/categories/" },
+            { name = "پست‌ها", link = "/" },
+        ]
     
 
 [markup]
@@ -431,8 +458,8 @@ hugo server --source exampleSite --themesDir ../.. --baseURL "http://localhost/"
 ```
 
 ## Recent Features
-- [x] Navigation menu for pages
 
+- [x] Navigation menu for pages
 
 ## TODO
 
