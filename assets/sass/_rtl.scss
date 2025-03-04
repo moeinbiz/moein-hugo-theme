@@ -8,6 +8,12 @@
       flex-direction: row-reverse;
     }
 
+    .title-container {
+      align-items: flex-end;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
     .title {
       margin-left: auto;
       margin-right: 0px;
