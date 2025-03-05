@@ -49,3 +49,12 @@ other = "Archive"
 
 [otherLinks]
 other = "Other Links"
+
+[about]
+other = "About"
+
+[pages]
+other = "Pages"
+
+[allPosts]
+other = "All Posts"

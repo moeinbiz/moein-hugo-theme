@@ -49,3 +49,12 @@ other = "آرشیو"
 
 [otherLinks]
 other = "لینک‌های دیگر"
+
+[about]
+other = "درباره"
+
+[pages]
+other = "صفحه‌ها"
+
+[allPosts]
+other = "همه پست‌ها"
