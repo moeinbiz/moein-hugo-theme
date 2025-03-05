@@ -164,7 +164,6 @@ Each language can have its own:
 - Subtitle
 - Language direction (LTR/RTL)
 - Weight (for ordering)
-- PageNavigation (page name and links)
 
 ### Markdown Settings
 
@@ -200,6 +199,31 @@ enableRobotsTXT = true
 [module]
     [[module.imports]]
         path = "github.com/mirmousaviii/mostafa-hugo-theme"
+
+[menus]
+[[menus.main]]
+  name = "allPosts"
+  url = "/"
+weight = 10
+[[menus.main]]
+  name = "categories"
+  url = "/categories/"
+  weight = 20
+[[menus.main]]
+  name = "tags"
+  url = "/tags/"
+  weight = 30
+[[menus.main]]
+  name = "about"
+  url = "/categories/about/"
+  weight = 40
+#[[menus.main]]
+#  name = "Mostafa"
+#  url = "https://mirmousavi.com/"
+#  weight = 50
+#  [menus.main.params]
+#    external = true
+
 
 [params]
     # Custom CSS / JS modules that will be imported by the template.
@@ -338,13 +362,6 @@ enableRobotsTXT = true
         title = "Mostafa Hugo Theme"
         [Languages.en.params]
             subtitle = "Theme Demo"
-        pageNavigation = [
-            { name = "All Posts", link = "/" },
-            { name = "Categories", link = "/categories/" },
-            { name = "Tags", link = "/tags/" },
-            { name = "About", link = "/categories/about/" },
-        ]
-
     [Languages.de]
         weight = 20
         languageCode = 'de-DE'
@@ -353,13 +370,6 @@ enableRobotsTXT = true
         title = "Mostafa Hugo Theme"
         [Languages.de.params]
             subtitle = "Theme Demo"
-        pageNavigation = [
-            { name = "Alle Beiträge", link = "/" },
-            { name = "Kategorien", link = "/categories/" },
-            { name = "Tags", link = "/tags/" },
-            { name = "Über", link = "/categories/about/" },
-        ]
-
     [Languages.nl]
         weight = 30
         languageCode = 'nl-NL'
@@ -368,13 +378,6 @@ enableRobotsTXT = true
         title = "Mostafa Hugo Theme"
         [Languages.nl.params]
             subtitle = "Theme Demo"
-        pageNavigation = [
-            { name = "Alle berichten", link = "/" },
-            { name = "Categorieën", link = "/categories/" },
-            { name = "Tags", link = "/tags/" },
-            { name = "Over", link = "/categories/about/" },
-        ]
-
     [Languages.fa]
         weight = 40
         languageCode = 'fa-IR'
@@ -383,12 +386,6 @@ enableRobotsTXT = true
         title = "قالب هوگو مصطفی"
         [Languages.fa.params]
             subtitle = "نمونه سایت"
-        pageNavigation = [
-            { name = "درباره", link = "/categories/about/" },
-            { name = "برچسب‌ها", link = "/tags/" },
-            { name = "دسته‌بندی‌ها", link = "/categories/" },
-            { name = "پست‌ها", link = "/" },
-        ]
     
 
 [markup]
@@ -459,7 +456,7 @@ hugo server --source exampleSite --themesDir ../.. --baseURL "http://localhost/"
 
 ## Recent Features
 
-- [x] Navigation menu for pages
+- [x] Menu for pages in the header
 
 ## TODO
 

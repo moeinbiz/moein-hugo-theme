@@ -16,6 +16,32 @@ theme = "mostafa-hugo-theme"
 #    [[module.imports]]
 #        path = "github.com/mirmousaviii/mostafa-hugo-theme"
 
+
+[menus]
+[[menus.main]]
+    name = "allPosts"
+    url = "/"
+    weight = 10
+[[menus.main]]
+    name = "categories"
+    url = "/categories/"
+    weight = 20
+[[menus.main]]
+    name = "tags"
+    url = "/tags/"
+    weight = 30
+[[menus.main]]
+    name = "about"
+    url = "/categories/about/"
+    weight = 40
+#[[menus.main]]
+#    name = "Mostafa"
+#    url = "https://mirmousavi.com/"
+#    weight = 50
+#    [menus.main.params]
+#        external = true
+
+
 [params]
     # Custom CSS / JS modules that will be imported by the template.
     # Files are relative to the static/ directory or a URL.
@@ -153,13 +179,6 @@ theme = "mostafa-hugo-theme"
         title = "Mostafa Hugo Theme"
         [Languages.en.params]
             subtitle = "Theme Demo"
-        pageNavigation = [
-            { name = "All Posts", link = "" },
-            { name = "Categories", link = "categories/" },
-            { name = "Tags", link = "tags/" },
-            { name = "About", link = "categories/about/" },
-        ]
-
     [Languages.de]
         weight = 20
         languageCode = 'de-DE'
@@ -168,13 +187,6 @@ theme = "mostafa-hugo-theme"
         title = "Mostafa Hugo Theme"
         [Languages.de.params]
             subtitle = "Theme Demo"
-        pageNavigation = [
-            { name = "Alle Beiträge", link = "" },
-            { name = "Kategorien", link = "categories/" },
-            { name = "Tags", link = "tags/" },
-            { name = "Über", link = "categories/about/" },
-        ]
-
     [Languages.nl]
         weight = 30
         languageCode = 'nl-NL'
@@ -183,13 +195,6 @@ theme = "mostafa-hugo-theme"
         title = "Mostafa Hugo Theme"
         [Languages.nl.params]
             subtitle = "Theme Demo"
-        pageNavigation = [
-            { name = "Alle berichten", link = "" },
-            { name = "Categorieën", link = "categories/" },
-            { name = "Tags", link = "tags/" },
-            { name = "Over", link = "categories/about/" },
-        ]
-
     [Languages.fa]
         weight = 40
         languageCode = 'fa-IR'
@@ -198,12 +203,6 @@ theme = "mostafa-hugo-theme"
         title = "قالب هوگو مصطفی"
         [Languages.fa.params]
             subtitle = "نمونه سایت"
-        pageNavigation = [
-            { name = "درباره", link = "categories/about/" },
-            { name = "برچسب‌ها", link = "tags/" },
-            { name = "دسته‌بندی‌ها", link = "categories/" },
-            { name = "پست‌ها", link = "" },
-        ]
 
 [markup]
     defaultMarkdownHandler = 'goldmark'

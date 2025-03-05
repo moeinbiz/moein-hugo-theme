@@ -23,24 +23,26 @@
 
 <div class="navigation">
 
-    <!-- Page Navigation -->
-    {{ if .Site.Params.pageNavigation }}
+    <!-- Menu Navigation -->
+    {{ if .Site.Menus.main }}
     <div class="pages menu-wrapper">
         <ul>
             {{ $activeFound := false }}
-            {{ range .Site.Params.pageNavigation }}
-            <li {{ if eq .link $.Page.RelPermalink }} class="active menu-toggle"{{ $activeFound = true }}{{ end }}>
-                <a href="{{ .Site.BaseURL }}{{ .link }}">{{ .name }}</a>
+            {{ range .Site.Menus.main }}
+            <li {{ if eq .URL $.Page.RelPermalink }} class="active menu-toggle"{{ $activeFound = true }}{{ end }}>
+                <a href="{{ .URL }}">{{ if i18n .Name }}{{ i18n .Name }}{{ else }}{{ .Name }}{{ end }}</a>
             </li>
             {{ end }}
             {{ if not $activeFound }}
             <li class="active menu-toggle menu-button">
-                <a href="#">{{ i18n "archive" }}</a>
+                <a href="#">{{ i18n "pages" }}</a>
             </li>
             {{ end }}
         </ul>
     </div>
     {{ end }}
+
+
 
     <!-- Language Chooser -->
     {{ if and (gt .Site.Languages 1) (.Site.Params.showHeaderLanguageChooser | default true) }}
