@@ -58,3 +58,6 @@ other = "Pages"
 
 [allPosts]
 other = "All Posts"
+
+[home]
+other = "Home"

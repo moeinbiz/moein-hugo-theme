@@ -17,23 +17,23 @@ theme = "mostafa-hugo-theme"
 #        path = "github.com/mirmousaviii/mostafa-hugo-theme"
 
 
-[menus]
-[[menus.main]]
-    name = "allPosts"
-    url = "/"
-    weight = 10
-[[menus.main]]
-    name = "categories"
-    url = "/categories/"
-    weight = 20
-[[menus.main]]
-    name = "tags"
-    url = "/tags/"
-    weight = 30
-[[menus.main]]
-    name = "about"
-    url = "/categories/about/"
-    weight = 40
+#[menus]
+#[[menus.main]]
+#    name = "home"
+#    url = "/"
+#    weight = 10
+#[[menus.main]]
+#    name = "categories"
+#    url = "/categories/"
+#    weight = 20
+#[[menus.main]]
+#    name = "tags"
+#    url = "/tags/"
+#    weight = 30
+#[[menus.main]]
+#    name = "about"
+#    url = "/categories/about/"
+#    weight = 40
 #[[menus.main]]
 #    name = "Mostafa"
 #    url = "https://mirmousavi.com/"
@@ -177,6 +177,22 @@ theme = "mostafa-hugo-theme"
         languageDirection = 'ltr'
         languageName = 'English'
         title = "Mostafa Hugo Theme"
+        [[Languages.en.menu.main]]
+            name = "home"
+            url = "/"
+            weight = 10
+        [[Languages.en.menu.main]]
+            name = "categories"
+            url = "/categories/"
+            weight = 20
+        [[Languages.en.menu.main]]
+            name = "tags"
+            url = "/tags/"
+            weight = 30
+        [[Languages.en.menu.main]]
+            name = "about"
+            url = "/categories/about/"
+            weight = 40
         [Languages.en.params]
             subtitle = "Theme Demo"
     [Languages.de]
@@ -185,6 +201,22 @@ theme = "mostafa-hugo-theme"
         languageDirection = 'ltr'
         languageName = 'German'
         title = "Mostafa Hugo Theme"
+        [[Languages.de.menu.main]]
+            name = "home"
+            url = "/"
+            weight = 10
+        [[Languages.de.menu.main]]
+            name = "categories"
+            url = "/de/categories/"
+            weight = 20
+        [[Languages.de.menu.main]]
+            name = "tags"
+            url = "/de/tags/"
+            weight = 30
+        [[Languages.de.menu.main]]
+            name = "about"
+            url = "/de/categories/about/"
+            weight = 40
         [Languages.de.params]
             subtitle = "Theme Demo"
     [Languages.nl]
@@ -193,6 +225,22 @@ theme = "mostafa-hugo-theme"
         languageDirection = 'ltr'
         languageName = 'Dutch'
         title = "Mostafa Hugo Theme"
+        [[Languages.nl.menu.main]]
+            name = "home"
+            url = "/nl/"
+            weight = 10
+        [[Languages.nl.menu.main]]
+            name = "categories"
+            url = "/nl/categories/"
+            weight = 20
+        [[Languages.nl.menu.main]]
+            name = "tags"
+            url = "/nl/tags/"
+            weight = 30
+        [[Languages.nl.menu.main]]
+            name = "about"
+            url = "/nl/categories/about/"
+            weight = 40
         [Languages.nl.params]
             subtitle = "Theme Demo"
     [Languages.fa]
@@ -201,6 +249,22 @@ theme = "mostafa-hugo-theme"
         languageDirection = 'rtl'
         languageName = 'Persian'
         title = "قالب هوگو مصطفی"
+        [[Languages.fa.menu.main]]
+            name = "home"
+            url = "/fa/"
+            weight = 10
+        [[Languages.fa.menu.main]]
+            name = "categories"
+            url = "/fa/categories/"
+            weight = 20
+        [[Languages.fa.menu.main]]
+            name = "tags"
+            url = "/fa/tags/"
+            weight = 30
+        [[Languages.fa.menu.main]]
+            name = "about"
+            url = "/fa/categories/about/"
+            weight = 40
         [Languages.fa.params]
             subtitle = "نمونه سایت"
 
