@@ -6,7 +6,7 @@
 
 ### A responsive theme with supports multilingual and various content types
 
-- [Demo](#demo)
+- [Demo and Screenshots](#demo-and-screenshots)
 - [Features](#features)
 - [Installation](#installation)
 - [Configuration](#configuration)
@@ -16,7 +16,7 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## Demo
+## Demo and Screenshots
 
 Check out the demo of the theme from [https://mirmousaviii.github.io/mostafa-hugo-theme](https://mirmousaviii.github.io/mostafa-hugo-theme/).
 
@@ -204,6 +204,8 @@ enableRobotsTXT = true
     [[module.imports]]
         path = "github.com/mirmousaviii/mostafa-hugo-theme"
 
+# Enable the menu in the header
+# Also, you can add it in the language section for each language
 [menus]
 [[menus.main]]
   name = "allPosts"
