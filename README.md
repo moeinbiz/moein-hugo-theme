@@ -27,8 +27,6 @@ Also, the theme is used in [https://mirmousavi.com](https://mirmousavi.com/).
 ![Screenshot](https://raw.githubusercontent.com/mirmousaviii/mostafa-hugo-theme/main/images/screenshot-03.png)
 ![Screenshot](https://raw.githubusercontent.com/mirmousaviii/mostafa-hugo-theme/main/images/screenshot-04.png)
 ![Screenshot](https://raw.githubusercontent.com/mirmousaviii/mostafa-hugo-theme/main/images/screenshot-05.png)
-![Screenshot](https://raw.githubusercontent.com/mirmousaviii/mostafa-hugo-theme/main/images/screenshot-06.png)
-
 
 ## Features
 
