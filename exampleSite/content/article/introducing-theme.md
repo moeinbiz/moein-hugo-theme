@@ -25,4 +25,22 @@ Key features of the Mostafa Hugo Theme:
 
 This article includes a title, date, tags, categories, and other metadata. The content section provides key points and additional information, guiding the reader through the main topics covered. For more detailed information, readers are encouraged to visit the provided link to the official website.
 
+### Table
+
+Here is a table showcasing various tools and their compatibility, focus areas, and strengths:
+
+| Tool | Focus Area | Strengths |
+|------|------------|------------|
+| [Storybook](https://storybook.js.org/) | UI development, documentation, visual & interaction testing | Extensive ecosystem, supports interaction testing, integrates with Chromatic |
+| [Ladle](https://ladle.dev/) | Fast UI development & documentation | Lightweight, optimized for Vite |
+| [React Cosmos](https://reactcosmos.org/) | Component development & testing | Automatically discovers and renders components with various props, contexts, and states for isolated testing |
+| [Histoire](https://histoire.dev/) | UI documentation & manual visual testing | Vue-specific, lightweight, Storybook alternative |
+| [React Styleguidist](https://react-styleguidist.js.org/) | Component documentation | Markdown-based documentation |
+| [Docz](https://www.docz.site/) | Interactive documentation, live previews | MDX support, easy integration |
+| [Pattern Lab](https://patternlab.io/) | Design system creation | Atomic Design methodology, framework-agnostic |
+| [Style Dictionary](https://amzn.github.io/style-dictionary/) | Design token management | Ensures cross-platform consistency |
+| [Catalog](https://www.catalog.style/) | UI documentation with live previews | Markdown and MDX support |
+| [Fractal](https://fractal.build/) | Component library development | Helps create structured, reusable component libraries with support for multiple templating engines |
+
+
 Feel free to explore the provided link for further details.

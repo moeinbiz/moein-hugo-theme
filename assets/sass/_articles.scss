@@ -507,6 +507,18 @@ article {
             margin-bottom: 0;
         }
     }
+
+
+    //    Table
+    table {
+        border-collapse: collapse;
+        font-size: 0.8em;
+        line-height: 1.5em;
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
 }
 
 #comments-container {
