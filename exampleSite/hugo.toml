@@ -252,19 +252,19 @@ theme = "mostafa-hugo-theme"
         [[Languages.fa.menu.main]]
             name = "home"
             url = "/fa/"
-            weight = 10
+            weight = 40
         [[Languages.fa.menu.main]]
             name = "categories"
             url = "/fa/categories/"
-            weight = 20
+            weight = 30
         [[Languages.fa.menu.main]]
             name = "tags"
             url = "/fa/tags/"
-            weight = 30
+            weight = 20
         [[Languages.fa.menu.main]]
             name = "about"
             url = "/fa/categories/about/"
-            weight = 40
+            weight = 10
         [Languages.fa.params]
             subtitle = "نمونه سایت"
 
