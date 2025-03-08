@@ -24,7 +24,12 @@
   }
 
     .navigation {
+      display: flex;
+      flex-direction: row-reverse;
+
+      .pages {
         direction: rtl;
+      }
     }
 
   @media (max-width: 800px) {
