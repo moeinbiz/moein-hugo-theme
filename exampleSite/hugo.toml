@@ -1,6 +1,6 @@
 baseURL = "https://mirmousaviii.github.io/mostafa-hugo-theme/" # You can use "/" in local
 languageCode = "en-us"
-title = "Mostafa Hugo Theme"
+title = "Hugo Theme Demo"
 
 # Change to one of your content languages defined at the end.
 DefaultContentLanguage = "en"
@@ -176,7 +176,7 @@ theme = "mostafa-hugo-theme"
         languageCode = 'en-US'
         languageDirection = 'ltr'
         languageName = 'English'
-        title = "Mostafa Hugo Theme"
+        title = "Hugo Theme Demo"
         [[Languages.en.menu.main]]
             name = "home"
             url = "/"
@@ -200,7 +200,7 @@ theme = "mostafa-hugo-theme"
         languageCode = 'de-DE'
         languageDirection = 'ltr'
         languageName = 'German'
-        title = "Mostafa Hugo Theme"
+        title = "Hugo Theme Demo"
         [[Languages.de.menu.main]]
             name = "home"
             url = "/"
@@ -224,7 +224,7 @@ theme = "mostafa-hugo-theme"
         languageCode = 'nl-NL'
         languageDirection = 'ltr'
         languageName = 'Dutch'
-        title = "Mostafa Hugo Theme"
+        title = "Hugo Theme Demo"
         [[Languages.nl.menu.main]]
             name = "home"
             url = "/nl/"
