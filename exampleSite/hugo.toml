@@ -56,6 +56,9 @@ theme = "mostafa-hugo-theme"
     keywords = "Hugo, theme, blog, responsive, minimal, multilingual, personal, dark, portfolio, gallery"
     subtitle = "A subtitle for demonstration purposes"
 
+    # Show subtitle in the header
+    showSubtitle = false
+
 
     # How many articles should be displayed at once?
     paginate = 10

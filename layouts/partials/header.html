@@ -10,9 +10,11 @@
                     {{ .Site.Title }}
                 </a>
             </h1>
+            {{ if .Site.Params.showSubtitle }}
             <h2 class="subtitle">
                 {{ .Site.Params.subtitle }}
             </h2>
+            {{ end }}
         </div>
 
         <nav>
