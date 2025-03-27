@@ -133,6 +133,7 @@ Here are the configuration options for the theme.
 - `paginate`: Number of articles per page (10)
 - `showReadingTime`: Displays estimated reading time for articles
 - `tocMinWordCount`: Minimum word count to display Table of Contents (400)
+- `showSubtitle`: Boolean to control the visibility of the subtitle in the header (true/false)
 
 #### SEO & Metadata
 
@@ -245,6 +246,8 @@ weight = 10
     keywords = "javascript, typescript, react, nodejs, monkeyc"
     subtitle = "A software engineer"
 
+    # Show subtitle in the header
+    showSubtitle = true
 
     # How many articles should be displayed at once?
     paginate = 10
