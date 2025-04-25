@@ -54,7 +54,7 @@ hugo mod init github.com/yourusername/your-hugo-site
 
 #### 1.2 Add the theme as a module
 
-Edit your `config.toml` file and add:
+Edit your `hugo.toml` file and add:
 
 ```toml
 [module]
@@ -62,17 +62,21 @@ Edit your `config.toml` file and add:
         path = "github.com/mirmousaviii/mostafa-hugo-theme"
 ```
 
-**Note**: You can also use `hugo.toml` or other config instead of `config.toml` for configuration.*
+**Note**: You can also use `hugo.yaml` or `hugo.json` as configuration file.
 
 #### 1.3 Fetch the theme
 
 Run:
 
 ```bash
-hugo mod tidy
+hugo mod get github.com/mirmousaviii/mostafa-hugo-theme@v1.5.1
 ```
 
-Done! The theme is now installed, and Hugo will automatically pull updates when you run `hugo mod tidy`.
+Done! The theme is now installed. Pulling updates is very easy and can be done by running this command:
+
+```
+hugo mod get -u github.com/mirmousaviii/mostafa-hugo-theme
+```
 
 ### 2. Install via Git Submodule (Advanced Users)
 
@@ -117,7 +121,7 @@ Here are the configuration options for the theme.
 - `baseURL`: The website URL
 - `title`: Main site title
 - `DefaultContentLanguage`: Default content language (en)
-- `googleAnalytics`: Google Analytics tracking ID
+- `services.googleAnalytics.id`: Google Analytics tracking ID
 - `enableRobotsTXT`: Enables generation of robots.txt file
 
 ### Site Parameters
@@ -130,7 +134,7 @@ Here are the configuration options for the theme.
 
 #### Content Display
 
-- `paginate`: Number of articles per page (10)
+- `pagination.pagerSize`: Number of articles per page (10)
 - `showReadingTime`: Displays estimated reading time for articles
 - `tocMinWordCount`: Minimum word count to display Table of Contents (400)
 - `showSubtitle`: Boolean to control the visibility of the subtitle in the header (true/false)
@@ -195,15 +199,17 @@ title = "Mostafa Mirmousavi"
 # Change to one of your content languages defined at the end.
 DefaultContentLanguage = "en"
 
-# Enable / Disable Google Analytics statistics
-googleAnalytics = "G-XXXXXXXXXX"
-
 # Generate the robots.txt file for SEO
 enableRobotsTXT = true
 
 [module]
     [[module.imports]]
         path = "github.com/mirmousaviii/mostafa-hugo-theme"
+
+# Enable / Disable Google Analytics statistics
+[services]
+  [services.googleAnalytics]
+    id = "G-XXXXXXXXXX"
 
 # Enable the menu in the header
 # Also, you can add it in the language section for each language
@@ -231,7 +237,10 @@ weight = 10
 #  [menus.main.params]
 #    external = true
 
-
+[pagination]
+  # How many articles should be displayed at once?
+  pagerSize = 10
+  
 [params]
     # Custom CSS / JS modules that will be imported by the template.
     # Files are relative to the static/ directory or a URL.
@@ -248,9 +257,6 @@ weight = 10
 
     # Show subtitle in the header
     showSubtitle = true
-
-    # How many articles should be displayed at once?
-    paginate = 10
 
     # Media configuration
     # let hugo automatically resize and crop your images to the correct sizes

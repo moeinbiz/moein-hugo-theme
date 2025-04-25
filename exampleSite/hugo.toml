@@ -5,17 +5,18 @@ title = "Hugo Theme Demo"
 # Change to one of your content languages defined at the end.
 DefaultContentLanguage = "en"
 
-# Enable Google Analytics statistics by entering your tracking code
-googleAnalytics = "G-08XG9MTFDE"
-
 # Generate the robots.txt file for SEO
 enableRobotsTXT = true
 
-theme = "mostafa-hugo-theme"
-#[module]
-#    [[module.imports]]
-#        path = "github.com/mirmousaviii/mostafa-hugo-theme"
+#theme = "mostafa-hugo-theme"
+[module]
+    [[module.imports]]
+        path = "github.com/mirmousaviii/mostafa-hugo-theme"
 
+# Enable Google Analytics statistics by entering your tracking code
+[services]
+  [services.googleAnalytics]
+    id = "G-08XG9MTFDE"
 
 #[menus]
 #[[menus.main]]
@@ -41,6 +42,9 @@ theme = "mostafa-hugo-theme"
 #    [menus.main.params]
 #        external = true
 
+[pagination]
+  # How many articles should be displayed at once?
+  pagerSize = 10
 
 [params]
     # Custom CSS / JS modules that will be imported by the template.
@@ -58,10 +62,6 @@ theme = "mostafa-hugo-theme"
 
     # Show subtitle in the header
     showSubtitle = false
-
-
-    # How many articles should be displayed at once?
-    paginate = 10
 
     # Media configuration
     # let hugo automatically resize and crop your images to the correct sizes
@@ -155,7 +155,7 @@ theme = "mostafa-hugo-theme"
     # show other links in the footer
     otherLinks = [
         { name = "Garmin Apps", link = "https://apps.garmin.com/developer/763f08dc-2be1-402f-b9b3-f3861b4df947/apps"},
-        { name = "GithHb.com", link = "https://github.com/mirmousaviii/mostafa-hugo-theme"},
+        { name = "Github.com", link = "https://github.com/mirmousaviii/mostafa-hugo-theme"},
         { name = "mirmousavi.com", link = "https://mirmousavi.com/"},
     ]
 
@@ -221,7 +221,7 @@ theme = "mostafa-hugo-theme"
             url = "/de/categories/about/"
             weight = 40
         [Languages.de.params]
-            subtitle = "A subtitle for demonstration purposes"
+            subtitle = "Ein Untertitel zu Demonstrationszwecken"
     [Languages.nl]
         weight = 30
         languageCode = 'nl-NL'
