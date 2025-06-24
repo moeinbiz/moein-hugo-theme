@@ -8,7 +8,7 @@ $base-color: {{ .Param "baseColor" | default "#191A19" }};
 $page-background-color: {{ .Param "pageBackgroundColor" | default "$base-color" }};
 $special-color: {{ .Param "specialColor" | default "#2D3642" }};
 $highlight-color: {{ .Param "highlightColor" | default "#ffffff" }};
-$text-color: {{ .Param "textColor" | default "#7a7a7a" }};
+$text-color: {{ .Param "textColor" | default "#A0A0A0" }};
 
 $nav-background-color: {{ .Param "navBackgroundColor" | default "$special-color" }};
 $nav-text-color: {{ .Param "navTextColor" | default "$page-background-color" }};
