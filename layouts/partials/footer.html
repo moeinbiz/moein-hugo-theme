@@ -25,9 +25,14 @@
             <ul>
                 {{ range $order, $taxonomy := (first ( .Site.Params.amountCategoriesInFooter | default 7 ) .Site.Taxonomies.categories.ByCount) }}
                 <li>
-                {{ with $.Site.GetPage (printf "/categories/%s" $taxonomy.Name) }}
-                    <a href="{{ .Permalink }}">{{ .Title }} ({{ $taxonomy.Count }})</a>
-                {{ end }}
+                    {{ with $.Site.GetPage (printf "/categories/%s" $taxonomy.Name) }}
+                        {{ $categorySlug := .Title }}
+                        {{ $displayCategoryName := index $.Site.Data.categories.category_names $categorySlug }}
+                        {{ if not $displayCategoryName }}
+                            {{ $displayCategoryName = $categorySlug }}
+                        {{ end }}
+                        <a href="{{ .Permalink }}">{{ $displayCategoryName }} ({{ $taxonomy.Count }})</a>
+                    {{ end }}
                 </li>
                 {{ end }}
             </ul>
