@@ -32,8 +32,12 @@
             {{ with .Params.categories }}
                 {{ range . }}
                 {{ $urlValue := replace . " " "-" | lower}}
+                {{ $displayCategoryName := index $.Site.Data.categories.category_names $urlValue }}
+                {{ if not $displayCategoryName }}
+                    {{ $displayCategoryName = $urlValue }}
+                {{ end }}
                 {{ with $.Site.GetPage (printf "/categories/%s" $urlValue) }}
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                <a href="{{ .Permalink }}">{{ $displayCategoryName }}</a>
                 {{ end }}
                 {{ end }}
             {{ else }}
