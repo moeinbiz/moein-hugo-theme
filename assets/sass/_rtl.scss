@@ -2,6 +2,29 @@
 //direction: rtl;
 
   font-family: $content-rtl-font;
+  article{
+    .footer{
+      direction: rtl;
+    }
+    .date {
+      .text {
+          margin-right: 0.75em;
+          margin-left: 0;
+      }
+    }
+    .categories {
+      .links {
+          margin-right: 0.75em;
+          margin-left: 0;
+      }
+    }
+    .tags {
+      .links {
+        margin-right: 0.75em;
+        margin-left: 0;
+      }
+    }
+  }
 
   header {
     .container {
@@ -18,6 +41,12 @@
       margin-left: auto;
       margin-right: 0px;
       font-family: $content-rtl-font;
+      direction: rtl;
+    }
+  }
+  .pages,
+  .languages {
+    ul {
       direction: rtl;
     }
   }
