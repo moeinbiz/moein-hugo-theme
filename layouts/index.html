@@ -23,8 +23,8 @@
                 {{ range $index, $article := $relevantArticles }}
                 <div id="tab-{{ $article.Slug }}" class="tab-pane {{ if eq $index 0 }}active{{ end }}">
                     <h3>{{ $article.Title }}</h3>
-                    {{ if $article.Params.image }}
-                        <img src="{{ $article.Params.image | relURL }}" alt="{{ $article.Title }}" class="tab-image">
+                    {{ if $article.Params.featured_image }}
+                        <img src="{{ $article.Params.featured_image | relURL }}" alt="{{ $article.Params.image_alt | default $article.Title }}" class="tab-featured-image">
                     {{ end }}
                     <p>{{ $article.Summary }}</p>
                     <a href="{{ $article.Permalink }}" class="read-more-button">مشاهده کامل مقاله</a>
