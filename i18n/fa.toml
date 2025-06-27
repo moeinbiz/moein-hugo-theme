@@ -8,7 +8,7 @@ other = "نویسنده‌ها"
 other = "برچسب‌ها"
 
 [posts]
-other = "پست‌ها"
+other = "عمومی"
 
 [socialMedia]
 other = "شبکه‌های اجتماعی"
@@ -48,7 +48,7 @@ other = "سری‌ها"
 other = "آرشیو"
 
 [otherLinks]
-other = "لینک‌های دیگر"
+other = "سایر لینک‌ها"
 
 [about]
 other = "درباره"

@@ -73,10 +73,10 @@
                 &copy;
                 {{ if .Site.Params.copyrightUseCurrentYear }}
                 {{ now.Year }}
-                {{ else if gt now.Year (.Site.Params.copyrightYearOverride | default 2024) }}
-                {{ .Site.Params.copyrightYearOverride | default 2024 }} - {{ now.Year }}
+                {{ else if gt now.Year (.Site.Params.copyrightYearOverride | default 2025) }}
+                {{ .Site.Params.copyrightYearOverride | default 2025 }} - {{ now.Year }}
                 {{ else }}
-                {{ .Site.Params.copyrightYearOverride | default 2024 }}
+                {{ .Site.Params.copyrightYearOverride | default 2025 }}
                 {{ end }}
                 {{ .Site.Params.copyrightBy | default (printf "by %s" .Site.Sites.Default.Title) }}
             </a>
