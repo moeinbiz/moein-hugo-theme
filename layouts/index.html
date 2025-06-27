@@ -1,31 +1,41 @@
 {{ define "main" }}
-{{ $allNonExcludedPages := where .Site.RegularPages "Params.excludefromindex" "==" nil }}
-{{ $allNonExcludedPagesNotTypePage := (where .Site.RegularPages "Type" "ne" "page" | intersect $allNonExcludedPages) }}
+<main id="main">
+    <section class="homepage-tabs-section">
+        <div class="tabs-container">
+            <div class="tabs-list">
+                <ul>
+                    {{/* مقالاتی که می‌خوایم توی تب ها نشون بدیم رو فیلتر می‌کنیم */}}
+                    {{ $relevantArticles := where .Site.RegularPages "Type" "in" (slice "services") }}
+                    {{/* شما می‌توانید اینجا فیلترهای دیگری بر اساس categories یا تعداد داشته باشید */}}
+                    {{/* مثال: (where .Site.RegularPages "Section" "services") */}}
+                    {{/* یا (where .Site.RegularPages "Params.categories" "intersect" (slice "concrete-cutting" "retrofitting")) */}}
 
-{{ $pinnedPostRelPermalinks := split .Site.Params.pinnedPost "," }}
-{{ $pinnedPosts := where $allNonExcludedPagesNotTypePage "RelPermalink" "in" $pinnedPostRelPermalinks }}
-{{ $pagesToPaginate := where $allNonExcludedPagesNotTypePage "RelPermalink" "not in" $pinnedPostRelPermalinks }}
 
-{{ $paginationLimit := index .Site.Params "paginate" | default 10 }}
-{{ if not .Site.Params.pinOnlyToFirstPage }}
-    {{ $paginationLimit = sub $paginationLimit (len $pinnedPosts) }}
-{{ end }}
+                    {{ range $index, $article := $relevantArticles }}
+                    <li class="{{ if eq $index 0 }}active{{ end }}">
+                        <a href="#tab-{{ $article.Slug }}">{{ $article.Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
 
-{{ $paginator := .Paginate $pagesToPaginate $paginationLimit }}
+            <div class="tabs-content">
+                {{ range $index, $article := $relevantArticles }}
+                <div id="tab-{{ $article.Slug }}" class="tab-pane {{ if eq $index 0 }}active{{ end }}">
+                    <h3>{{ $article.Title }}</h3>
+                    {{ if $article.Params.image }}
+                        <img src="{{ $article.Params.image | relURL }}" alt="{{ $article.Title }}" class="tab-image">
+                    {{ end }}
+                    <p>{{ $article.Summary }}</p>
+                    <a href="{{ $article.Permalink }}" class="read-more-button">مشاهده کامل مقاله</a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
 
-    {{ if .Site.Params.pinnedPost }}
-        {{ if (and .Site.Params.pinOnlyToFirstPage (ne $paginator.PageNumber 1)) }}
-            {{/* Do nothing if the pinOnlyToFirstPage flag is set and we're not on page 1. */}}
-        {{else}}
-            {{ range $pinnedPosts }}
-        {{ partial "article-wrapper.html" . }}
-            {{end}}
-        {{end}}
-    {{end}}
+    {{/* می‌توانید محتوای Markdown از _index.md را اینجا نمایش دهید */}}
+    {{ .Content }}
 
-    {{ range $paginator.Pages }}
-        {{ partial "article-wrapper.html" . }}
-    {{ end }}
-
-    {{ partial "paginator.html" . }}
+</main>
 {{ end }}

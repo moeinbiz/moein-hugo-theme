@@ -55,3 +55,5 @@ $footer-headline-color: {{ .Param "" | default "$highlight-color" }};
 
 // Base theme styling
 @import 'mostafa-hugo-theme';
+
+@import "homepage_tabs.scss";

@@ -117,6 +117,8 @@
     {{ end }}
 
     {{ partial "hooks/body-end.html" . }}
+    {{ $script := resources.Get "js/tabs.js" }}
+    <script src="{{ $script.RelPermalink }}"></script>
 </body>
 
 </html>
