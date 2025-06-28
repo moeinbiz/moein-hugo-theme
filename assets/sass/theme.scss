@@ -57,3 +57,4 @@ $footer-headline-color: {{ .Param "" | default "$highlight-color" }};
 @import 'mostafa-hugo-theme';
 
 @import "homepage_tabs.scss";
+@import "background-canvas.scss";

@@ -94,6 +94,7 @@
 </head>
 
 <body class="mostafa-hugo-theme {{.Site.Language.LanguageDirection}}">
+    <canvas id="concreteCanvas"></canvas>
     {{ partial "hooks/body-start.html" . }}
 
     {{ partial "header.html" . }}
@@ -118,6 +119,7 @@
 
     {{ partial "hooks/body-end.html" . }}
     {{ $script := resources.Get "js/tabs.js" }}
+    {{ $script := resources.Get "js/background-animation.js" }}
     <script src="{{ $script.RelPermalink }}"></script>
 </body>
 
